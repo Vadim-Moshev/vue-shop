@@ -1,0 +1,1027 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"content"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"tra",
+				"transparent-violet"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"siz",
+				"font-size"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"b",
+				"big-tile-width"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"si",
+				"font-size"
+			],
+			[
+				"re",
+				"reports__big"
+			],
+			[
+				"oot",
+				"outline-color"
+			],
+			[
+				"colo",
+				"background-color"
+			],
+			[
+				"BOR",
+				"border"
+			],
+			[
+				"sl",
+				"slides"
+			],
+			[
+				"slid",
+				"slide-info-height"
+			],
+			[
+				"bak",
+				"background"
+			],
+			[
+				"border",
+				"border-bottom-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"sli",
+				"slideToShow"
+			],
+			[
+				"slide",
+				"slides"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"tr",
+				"text-transform"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"ma",
+				"main-slider"
+			],
+			[
+				"mo",
+				"movieName"
+			],
+			[
+				"exp",
+				"explode()"
+			],
+			[
+				"dir",
+				"flex-direction"
+			],
+			[
+				"sess",
+				"session_start()"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"ed",
+				"addEventListener"
+			],
+			[
+				"ad",
+				"addEventListener"
+			],
+			[
+				"p",
+				"popup"
+			],
+			[
+				"r",
+				"rounded"
+			],
+			[
+				"col",
+				"background-color"
+			],
+			[
+				"ac",
+				"action"
+			],
+			[
+				"pos",
+				"background-position"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"sty",
+				"font-style"
+			],
+			[
+				"brc",
+				"border-right-color"
+			],
+			[
+				"n",
+				"prettierignore\tPrettier ignore next node (JsPrettier)"
+			],
+			[
+				"ta",
+				"taskStatus"
+			],
+			[
+				"tar",
+				"targetTask"
+			],
+			[
+				"isE",
+				"isEdtorModeEnabled"
+			],
+			[
+				"fe",
+				"fetchTaskById"
+			],
+			[
+				"fl",
+				"flag"
+			],
+			[
+				"taskS",
+				"tasksStorage"
+			],
+			[
+				"STR",
+				"TASK_STRUCTURE"
+			],
+			[
+				"indi",
+				"indigo"
+			],
+			[
+				"Ta",
+				"TaskViewer"
+			],
+			[
+				"flo",
+				"flex-direction"
+			],
+			[
+				"rea",
+				"react-router-dom"
+			],
+			[
+				"Re",
+				"RecordsStore"
+			],
+			[
+				"mobx",
+				"mobx-react-router"
+			],
+			[
+				"dire",
+				"flex-direction"
+			],
+			[
+				"fle",
+				"flex-grow"
+			],
+			[
+				"di",
+				"flex-direction"
+			],
+			[
+				"un",
+				"underline"
+			],
+			[
+				"dec",
+				"text-decoration-line"
+			],
+			[
+				"Pr",
+				"PrivateRoute"
+			],
+			[
+				"nav",
+				"navigate"
+			],
+			[
+				"react",
+				"react-redux"
+			],
+			[
+				"react-",
+				"react-router-dom"
+			],
+			[
+				"lo",
+				"localStorage"
+			],
+			[
+				"use",
+				"useSelector"
+			],
+			[
+				"time",
+				"Timesheet"
+			],
+			[
+				"ti",
+				"timeSheetIsLoading"
+			],
+			[
+				"iss",
+				"issuesAreLoading"
+			],
+			[
+				"SET",
+				"SET_ISSUES_LOADING"
+			],
+			[
+				"SE",
+				"SET_ISSUES_LOADING"
+			],
+			[
+				"La",
+				"LargeLoader"
+			],
+			[
+				"USERS",
+				"usersAreLoading"
+			],
+			[
+				"sub",
+				"submitButtonContent"
+			],
+			[
+				"auth",
+				"authInProgress"
+			],
+			[
+				"setAS",
+				"setAuthProgressStatusAction"
+			],
+			[
+				"ST",
+				"SET_AUTH_PROGRESS_STATUS"
+			],
+			[
+				"progr",
+				"authInProgress"
+			],
+			[
+				"STA",
+				"SET_AUTH_PROGRESS_STATUS"
+			],
+			[
+				"at",
+				"authErrorMessage"
+			],
+			[
+				"err",
+				"errMsg"
+			],
+			[
+				"Aut",
+				"AuthErrorMessage"
+			],
+			[
+				"au",
+				"authErrorMessage"
+			],
+			[
+				"Auth",
+				"authErrorMessage"
+			],
+			[
+				"set",
+				"setAuthErrorMessageAction"
+			],
+			[
+				"LOG",
+				"LOGOUT"
+			],
+			[
+				"HM",
+				"minutesToHM"
+			],
+			[
+				"h",
+				"hours"
+			],
+			[
+				"mi",
+				"minutesTotal"
+			],
+			[
+				"fet",
+				"fetchTimesheet"
+			],
+			[
+				"is",
+				"issueId"
+			],
+			[
+				"f",
+				"fetchedTimesheet"
+			],
+			[
+				"FE",
+				"FETCH_TIMESHEET"
+			],
+			[
+				"FET",
+				"FETCH_TIMESHEET"
+			],
+			[
+				"fil",
+				"filterString"
+			],
+			[
+				"dis",
+				"dispatch"
+			],
+			[
+				"cha",
+				"changeFilterStringAction"
+			],
+			[
+				"CHA",
+				"CHANGE_FILTER_STRING"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"disp",
+				"displayedIssues"
+			],
+			[
+				"actio",
+				"filterIssuesAction"
+			],
+			[
+				"fi",
+				"filterString"
+			],
+			[
+				"FIL",
+				"FILTER_ISSUES"
+			],
+			[
+				"issue",
+				"issuesReducer"
+			],
+			[
+				"i",
+				"issue"
+			],
+			[
+				"st",
+				"state"
+			],
+			[
+				"ro",
+				"rowIndex"
+			],
+			[
+				"cell",
+				"tableRowCells"
+			],
+			[
+				"cl",
+				"clearFetchedUserByIdAction"
+			],
+			[
+				"C",
+				"CLEAR_FETCHED_USER_BY_ID"
+			],
+			[
+				"CLE",
+				"CLEAR_FETCHED_USERS"
+			],
+			[
+				"fetchedUser",
+				"fetchedUserById"
+			],
+			[
+				"CLEAR_FETCHED_USER",
+				"CLEAR_FETCHED_USER_BY_ID"
+			],
+			[
+				"byi",
+				"fetchedUserById"
+			],
+			[
+				"by",
+				"fetchUserByIdAction"
+			],
+			[
+				"feth",
+				"fetchUserByIdAPI"
+			],
+			[
+				"fetch",
+				"fetchUsersById"
+			],
+			[
+				"fetc",
+				"fetchedUserById"
+			],
+			[
+				"ort",
+				"import"
+			],
+			[
+				"borde",
+				"border-collapse"
+			],
+			[
+				"act",
+				"authorizeAction"
+			],
+			[
+				"en",
+				"enterPassword"
+			],
+			[
+				"CH",
+				"CHANGE_USERNAME"
+			],
+			[
+				"A",
+				"AUTHORIZE"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"Ro",
+				"Routes"
+			],
+			[
+				"Browse",
+				"BrowserRouter"
+			],
+			[
+				"Rou",
+				"Router"
+			],
+			[
+				"car",
+				"cardTitle"
+			],
+			[
+				"AD",
+				"ADD_MANY_CUSTOMERS"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 364,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"unf",
+				"Code Folding: Unfold All"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal p",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"unfo",
+				"Code Folding: Unfold All"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Colorsublime: Install Theme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/vue-shop"
+	],
+	"file_history":
+	[
+		"/D/portfolio/portfolio_showekb/src/index.html",
+		"/D/portfolio/portfolio_showekb/src/aboutwork.html",
+		"/D/portfolio/portfolio_showekb/src/styles/fragments/aboutwork/_aboutwork.scss",
+		"/D/portfolio/portfolio_showekb/package.json",
+		"/D/portfolio/portfolio_showekb/src/styles/main.scss",
+		"/D/portfolio/portfolio_showekb/src/styles/vars.scss",
+		"/D/portfolio/portfolio_showekb/src/styles/mixins.scss",
+		"/D/portfolio/portfolio_showekb/src/styles/fonts.css",
+		"/D/portfolio/portfolio_showekb/todo.txt",
+		"/D/отСаш.js",
+		"/D/portfolio/portfolio_showekb/.gitignore",
+		"/D/portfolio/portfolio_showekb/webpack.config.js",
+		"/D/portfolio/portfolio_showekb/src/public/aboutwork.js",
+		"/D/portfolio/portfolio_showekb/src/styles/fragments/index/_reports.scss",
+		"/D/portfolio/portfolio_showekb/src/aboutwork.js",
+		"/D/portfolio/portfolio_showekb/src/h.html",
+		"/D/Сборка от Анна Блок/Webpack-Simple/webpack.config.js",
+		"/D/portfolio/portfolio_showekb/src/h.js",
+		"/D/Мои документы и так далее/Рабочий стол/dist/h.html",
+		"/D/portfolio/portfolio_showekb/package-lock.json",
+		"/D/portfolio/portfolio_showekb/src/styles/fragments/_modal.scss",
+		"/D/portfolio/portfolio_showekb/src/styles/fragments/index/_we-help.scss",
+		"/D/portfolio/portfolio_showekb/src/styles/fragments/index/_photo-video.scss",
+		"/D/portfolio/portfolio_showekb/src/scripts/utils/fade-slider.js",
+		"/D/portfolio/portfolio_showekb/src/styles/fragments/index/_main-slider.scss",
+		"/D/portfolio/portfolio_showekb/src/styles/fragments/index/_book-leader.scss",
+		"/D/portfolio/portfolio_showekb/src/styles/fragments/_header.scss",
+		"/D/portfolio/portfolio_showekb/src/styles/fragments/_footer.scss",
+		"/D/portfolio/portfolio_showekb/src/styles/fragments/index/_events-slider.scss",
+		"/D/portfolio/portfolio_showekb/src/scripts/events-slider.js",
+		"/D/portfolio/portfolio_showekb/src/index.js",
+		"/D/portfolio/portfolio_showekb/src/scripts/main-slider.js",
+		"/D/portfolio/portfolio_showekb/src/scripts/modal-open.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/sync/фриланс/2023/Ольга Александровна К/6 марта/уч/s.htm",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/sync/фриланс/2023/Ольга Александровна К/15 февраля/3 Самостоятельная Начало работы с Vue.JS. Декларативная отрисовка. Директивы и их применение/index.html",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/sync/фриланс/2023/Ольга Александровна К/15 февраля/Практика Начало работы с Vue.JS. Декларативная отрисовка. Директивы и их применение/index.html",
+		"/C/Users/Пользователь/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/_shutdown.bat",
+		"/Z/home/localhost/www/php_for_ilya/index.php",
+		"/Z/home/localhost/www/php_for_ilya/cinemas.txt",
+		"/Z/home/localhost/www/php_for_ilya/scripts/functions.js",
+		"/Z/home/localhost/www/php_for_ilya/scripts/movie-selector.js",
+		"/Z/home/localhost/www/php_for_ilya/styles/styles.css",
+		"/Z/home/localhost/www/php_for_ilya/scripts/backgorund-color-selector.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Мои скрипты/Удалить как спам.js",
+		"/Z/home/localhost/www/php_for_ilya/php/get-cinema.php",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Музыка с плеера/Для расслабления/+ PlayLists/Для Расслабления.m3u",
+		"/D/DISTR/Игры/Quake 2/weapons/config.cfg",
+		"/D/DISTR/Игры/Quake 2/baseq2/boss.cfg",
+		"/D/DISTR/Игры/Quake 2/baseq2/bear.cfg",
+		"/D/DISTR/Игры/Quake 2/baseq2/amnet.cfg",
+		"/D/DISTR/Игры/Quake 2/baseq2/config.cfg",
+		"/D/DISTR/Игры/Quake 2/baseq2/power.cfg",
+		"/D/DISTR/Игры/Quake 2/baseq2/maps.lst",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Музыка с плеера/eJay/+ PlayLists/eJay.m3u",
+		"/D/portfolio/portfolio_showekb/src/styles/fragments/_nav.scss",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/Schnider-consult-tz/styles/index.css",
+		"/D/tockkaru_tz/src/styles/main.scss",
+		"/D/Работа it invest/showEkb/templates/assets/styles/fonts.css",
+		"/D/portfolio/portfolio_showekb/src/styles/parts/fonts.css",
+		"/D/Работа it invest/showEkb/templates/index.html",
+		"/D/Мои документы и так далее/Загрузки/beermoney/beermoney.css",
+		"/D/portfolio/portfolio_showekb/src/images/reserve/sprite.txt",
+		"/D/Работа it invest/showEkb/templates/assets/styles/style.css",
+		"/D/portfolio/portfolio_showekb/_cmd.bat",
+		"/D/tockkaru_tz/src/styles/vars.scss",
+		"/D/tockkaru_tz/src/index.html",
+		"/D/tockkaru_tz/src/scripts/slider.js",
+		"/D/tockkaru_tz/src/index.js",
+		"/D/tockkaru_tz/webpack.config.js",
+		"/D/tockkaru_tz/package.json",
+		"/D/tockkaru_tz/src/styles/reset.css",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/Stat4Market_tz/src/styles/main.scss",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/Stat4Market_tz/src/styles/vars.scss",
+		"/D/womanup-tz/package.json",
+		"/D/womanup-tz/public/index.html",
+		"/D/Вадим/фриланс/2015/Александр Верин/4 сумма строк двумерного массива/TASK_4.PAS",
+		"/D/vadim-moshev.github.io/test/womanup/index.html",
+		"/D/vadim-moshev.github.io/test/womanup/asset-manifest.json",
+		"/D/womanup-tz/build/index.html",
+		"/D/womanup-tz/src/stores/tasksStore.js",
+		"/D/womanup-tz/src/pages/taskViewer/index.jsx",
+		"/D/womanup-tz/src/pages/taskEditor/index.module.css",
+		"/D/womanup-tz/src/pages/taskEditor/index.jsx",
+		"/D/womanup-tz/src/pages/taskViewer/index.module.css",
+		"/D/womanup-tz/src/components/taskItem/index.jsx",
+		"/D/womanup-tz/src/components/taskItem/index.module.css",
+		"/D/womanup-tz/src/pages/tasksList/index.jsx",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/yeticrab_tz/src/pages/requestsEditor/index.jsx",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/yeticrab_tz/src/components/universalInput/index.jsx",
+		"/D/womanup-tz/src/components/tasksContainer/index.jsx",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/totsystems_tz/src/stores/messagesStore.js",
+		"/D/apricode_work/awesome-people/src/index.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/jetstyle_tz/src/index.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/yeticrab_tz/src/stores/requestsStore.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/jetstyle_tz/src/pages/booksEditor/index.jsx",
+		"/D/womanup-tz/src/App.jsx",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/jetstyle_tz/src/stores/booksStore.js",
+		"/D/womanup-tz/src/pages/taskEditor/handlers.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/apptrix-tz/src/App.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/totsystems_tz/src/App.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/videosystems-tz/src/App.js",
+		"/D/womanup-tz/src/stores/routing.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/jetstyle_tz/src/helpers/booksStorage.js",
+		"/D/womanup-tz/src/pages/tasksList/index.module.css",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Музыка с плеера/Маяк/+ PlayLists/Маяк.m3u",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/apptrix-tz/src/pages/timesheet/index.jsx",
+		"/D/womanup-tz/src/components/tasksContainer/index.module.css",
+		"/D/womanup-tz/src/App.css",
+		"/D/freelance/OTE_Tour/frontend/src/Components/Heading/Heading.jsx",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/totsystems_tz/src/pages/board/index.jsx",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/jetstyle_tz/src/App.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/jetstyle_tz/src/pages/booksList/index.jsx",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/yeticrab_tz/src/pages/requestsList/index.jsx",
+		"/D/jetstyle_tz/package-lock.json",
+		"/D/jetstyle_tz/package.json",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/jetstyle_tz/src/stores/index.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/jetstyle_tz/src/stores/routing.js",
+		"/D/womanup-tz/src/stores/index.js",
+		"/D/womanup-tz/README.md",
+		"/D/womanup-tz/src/index.js",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/jetstyle_tz/package.json",
+		"/D/YandexDisk/НЕСИНХРОНИЗИРОВАННАЯ ПАПКА/Тестовые задания/jetstyle_tz/.gitignore",
+		"/D/vadim-moshev.github.io/.gitignore",
+		"/D/Вадим/ПАПКА ДЛЯ РАБОТЫ/new-video-mmvs/.gitignore",
+		"/D/DISTR/Игры/Quake 2/baseq2/killme.cfg",
+		"/D/DISTR/Игры/Quake 2/baseq2/warehouse.cfg",
+		"/D/Работа it invest/сталекс/templates/index.html",
+		"/D/freelance/public_html/package.json"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 148.0,
+		"where_history":
+		[
+			"D:\\portfolio\\portfolio_showekb\\src,<project filters>",
+			"D:\\portfolio\\portfolio_showekb\\src",
+			"D:\\apptrix-tz\\src",
+			"D:\\apptrix-tz",
+			"D:\\freelance\\OTE_Tour\\frontend",
+			"D:\\freelance\\OTE_Tour\\frontend\\src",
+			"D:\\freelance\\OTE_Tour\\frontend",
+			"D:\\Stat4Market_tz\\src",
+			"D:\\Вадим\\ПАПКА ДЛЯ РАБОТЫ\\new-video-mmvs"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"P",
+			"b.",
+			"index",
+			"conte",
+			"big-tile-width",
+			"$tile-gap",
+			"div",
+			"height",
+			"div",
+			"span",
+			"tile-gap",
+			"width",
+			"modal-popup",
+			"we-help-you",
+			"@include like-button",
+			"cuprum_regular",
+			"thumb-background",
+			"photo-video__thumb-background-video",
+			"photo-video__video-link",
+			"width",
+			"photo-video__thumb-background",
+			"width",
+			"height",
+			"with",
+			"slides",
+			";\n",
+			"anniversaries",
+			"weddings",
+			"slide-item",
+			"image",
+			"треп",
+			"5",
+			"@include like-button(",
+			"notice",
+			"book-leader__leader-period",
+			"book-leader__leader-fee",
+			"book-leader__leader-name",
+			"book-leader__leader-occupation",
+			"book-leader__leader-name",
+			"leader__leader-name",
+			"leader__leader",
+			"ванче",
+			"jpg",
+			"book-leader__leader-info",
+			"}\n",
+			"weddings-org",
+			"business",
+			"& .",
+			"weddings-org",
+			"id1",
+			"main-slider__switch-item-header",
+			"0",
+			"span",
+			"<span",
+			"55,1460",
+			"63,0240",
+			"47,3",
+			" ",
+			"hidden",
+			"movie-selector",
+			"innerText",
+			"aInnerText",
+			"aCSSProps",
+			"aAttributes",
+			"I",
+			"str",
+			"я",
+			"\\YandexDisk\\НЕСИНХРОНИЗИРОВАННАЯ ПАПКА\\Музыка с плеера\\Для расслабления\\",
+			"modal-popup--visible",
+			"modal-overlay--visible",
+			"0.3",
+			"linear",
+			"f",
+			"button",
+			"closePopup",
+			"let",
+			"header",
+			"menu",
+			"footer__menu-item",
+			"Track",
+			"-part",
+			"header",
+			"side-paddings",
+			"42",
+			"width",
+			"@",
+			"class=\"header__schedule\"",
+			"main",
+			"header",
+			".scss",
+			".",
+			"linea",
+			"font-style: normal",
+			"slider__slide-text-part",
+			"prev",
+			"png",
+			"main-width",
+			"sprite-soc-",
+			"][",
+			"A",
+			"/test/womanup/",
+			"manife",
+			"m",
+			"done",
+			"deadline",
+			"getRequestById",
+			"fetchedBook",
+			"useEffect",
+			"getRequestById",
+			"toJS",
+			"BrowserRouter",
+			"saveMessage",
+			"reset",
+			"tasksList",
+			"toJS",
+			"button",
+			"0O:",
+			"\\YandexDisk\\НЕСИНХРОНИЗИРОВАННАЯ ПАПКА\\Музыка с плеера\\Маяк\\",
+			"\u0014",
+			"\u0011",
+			"\u0017",
+			"\u001a",
+			"\u0012",
+			"\u001f",
+			"\u001c",
+			"\\YandexDisk\\НЕСИНХРОНИЗИРОВАННАЯ ПАПКА\\Музыка с плеера\\Маяк",
+			"getRequestById",
+			"fetchedRequest"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"we-help",
+			"book-leader__leader-panels",
+			"BigLoader",
+			"bigLoader",
+			"timesheet",
+			"Timesheet",
+			"UsersTable",
+			"usersTable",
+			"page-section__start-price-value",
+			"pale-blue",
+			"resource-item"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".gitignore",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								178,
+								178
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "vue-shop.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 136.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
