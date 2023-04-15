@@ -1,11 +1,33 @@
 <template>
-  <h2>Вы смотрите категорию {{ this.$route.params.categoryName }}</h2>
+  <div class="wrapper">
+    <h2>Вы смотрите категорию {{ this.$route.params.categoryName }}</h2>
+    <div class="goods-container">
+      <GoodItem />
+      <GoodItem />
+      <GoodItem />
+    </div>
+  </div>
 </template>
 
 <script>
+import GoodItem from "@/components/GoodItem";
+
 export default {
   name: "CategoryViewer",
+  components: {
+    GoodItem,
+  },
 };
 </script>
 
-<style></style>
+<style>
+.wrapper {
+  flex-grow: 1;
+}
+
+.goods-container {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+</style>
