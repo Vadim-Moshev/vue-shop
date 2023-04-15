@@ -1,6 +1,8 @@
 <template>
   <header class="header">
-    <div class="logo">Интернет-магазин компьютерной техники</div>
+    <router-link to="/" class="logo"
+      >Интернет-магазин компьютерной техники</router-link
+    >
     <router-link to="/" class="cart-link">Корзина</router-link>
   </header>
   <main class="main">
@@ -47,6 +49,7 @@ export default {
   font-size: 16px;
 }
 
+.logo:hover,
 .cart-link:hover {
   color: darkorange;
 }
