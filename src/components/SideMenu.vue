@@ -1,9 +1,9 @@
 <template>
   <nav class="side-menu">
-    <router-link class="side-menu__link-item" to="/"
+    <router-link class="side-menu__link-item" to="/category/mice"
       >Ссылка номер 1</router-link
     >
-    <router-link class="side-menu__link-item" to="/"
+    <router-link class="side-menu__link-item" to="/category/keyboadrs"
       >Ссылка номер 2</router-link
     >
   </nav>

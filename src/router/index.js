@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
 import MainPage from "../views/MainPage.vue";
+import CategoryViewer from "../views/CategoryViewer.vue";
 
 const routes = [
   {
     path: "/",
     name: "main",
     component: MainPage,
+  },
+  {
+    path: "/category/:categoryName",
+    name: "category",
+    component: CategoryViewer,
   },
   {
     path: "/about",
