@@ -3,8 +3,22 @@
     <div class="logo">Интернет-магазин компьютерной техники</div>
     <router-link to="/" class="cart-link">Корзина</router-link>
   </header>
-  <router-view />
+  <main class="main">
+    <SideMenu />
+    <router-view />
+  </main>
 </template>
+
+<script>
+import SideMenu from "@/components/SideMenu";
+
+export default {
+  name: "App",
+  components: {
+    SideMenu,
+  },
+};
+</script>
 
 <style>
 #app {
@@ -35,5 +49,11 @@
 
 .cart-link:hover {
   color: darkorange;
+}
+
+.main {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
 }
 </style>
