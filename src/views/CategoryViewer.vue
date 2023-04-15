@@ -2,9 +2,7 @@
   <div class="wrapper">
     <h2>Вы смотрите категорию {{ this.$route.params.categoryName }}</h2>
     <div class="goods-container">
-      <GoodItem />
-      <GoodItem />
-      <GoodItem />
+      <GoodItem goodName="Пётр" />
     </div>
   </div>
 </template>

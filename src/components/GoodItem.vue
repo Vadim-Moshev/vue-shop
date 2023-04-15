@@ -1,12 +1,15 @@
 <template>
   <div class="good-item">
-    <span>Мега товар</span>
+    <span>{{ goodName }}</span>
   </div>
 </template>
 
 <script>
 export default {
   name: "GoodItem",
+  props: {
+    goodName: String,
+  },
 };
 </script>
 
