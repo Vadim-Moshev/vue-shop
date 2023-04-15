@@ -3,7 +3,7 @@
     <router-link to="/" class="logo"
       >Интернет-магазин компьютерной техники</router-link
     >
-    <router-link to="/" class="cart-link">Корзина</router-link>
+    <router-link to="/shopcart" class="cart-link">Корзина</router-link>
   </header>
   <main class="main">
     <SideMenu />

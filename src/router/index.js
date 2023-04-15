@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import MainPage from "../views/MainPage.vue";
 import CategoryViewer from "../views/CategoryViewer.vue";
+import ShopCart from "../views/ShopCart.vue";
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: "/category/:categoryName",
     name: "category",
     component: CategoryViewer,
+  },
+  {
+    path: "/shopcart",
+    name: "shopcart",
+    component: ShopCart,
   },
   {
     path: "/about",
