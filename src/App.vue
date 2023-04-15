@@ -1,9 +1,9 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <header class="header">
+    <div class="logo">Интернет-магазин компьютерной техники</div>
+    <router-link to="/" class="cart-link">Корзина</router-link>
+  </header>
+  <router-view />
 </template>
 
 <style>
@@ -15,16 +15,25 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: navy;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.logo {
+  font-size: 24px;
+  color: #fff;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.cart-link {
+  color: #fff;
+  font-size: 16px;
+}
+
+.cart-link:hover {
+  color: darkorange;
 }
 </style>
