@@ -1,10 +1,13 @@
 <template>
   <nav class="side-menu">
     <router-link class="side-menu__link-item" to="/category/mice"
-      >Ссылка номер 1</router-link
+      >Мыши</router-link
     >
     <router-link class="side-menu__link-item" to="/category/keyboadrs"
-      >Ссылка номер 2</router-link
+      >Клавиатуры</router-link
+    >
+    <router-link class="side-menu__link-item" to="/category/HDD"
+      >Жёсткие диски</router-link
     >
   </nav>
 </template>
