@@ -10,6 +10,13 @@
 import GoodItem from "@/components/GoodItem";
 import goods from "@/mocks/goods";
 
+function getGoodsByCategory(goods, index) {
+  const categoryIndex = Number(index);
+  return goods.filter((item) => {
+    return Number(item.category) === categoryIndex;
+  });
+}
+
 export default {
   name: "CategoryViewer",
   components: {
@@ -21,14 +28,12 @@ export default {
     };
   },
   created() {
-    this.goods = goods.filter((item) => {
-      return +item.category === +this.$route.params.categoryIndex;
-    });
+    const categoryIndex = this.$route.params.categoryIndex;
+    this.goods = getGoodsByCategory(goods, categoryIndex);
   },
   beforeRouteUpdate(to, from, next) {
-    this.goods = goods.filter((item) => {
-      return +item.category === +to.params.categoryIndex;
-    });
+    const categoryIndex = to.params.categoryIndex;
+    this.goods = getGoodsByCategory(goods, categoryIndex);
     next();
   },
 };
