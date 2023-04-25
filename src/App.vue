@@ -9,6 +9,7 @@
     <SideMenu />
     <router-view />
   </main>
+  <footer class="footer"></footer>
 </template>
 
 <script>
@@ -23,12 +24,20 @@ export default {
 </script>
 
 <style>
+html,
+body {
+  height: 100%;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .header {
@@ -58,5 +67,12 @@ export default {
   display: flex;
   gap: 10px;
   align-items: stretch;
+  flex: auto;
+  height: 100%;
+}
+
+.footer {
+  height: 100px;
+  background-color: navy;
 }
 </style>
