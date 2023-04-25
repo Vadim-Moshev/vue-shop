@@ -10,7 +10,7 @@ const routes = [
     component: MainPage,
   },
   {
-    path: "/category/:categoryName",
+    path: "/category/:categoryIndex",
     name: "category",
     component: CategoryViewer,
   },

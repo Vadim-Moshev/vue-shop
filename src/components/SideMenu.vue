@@ -1,32 +1,53 @@
 <template>
   <nav class="side-menu">
-    <router-link class="side-menu__link-item" to="/category/monitors"
+    <router-link class="side-menu__link-item" :to="`/category/${CAT_MONITORS}`"
       >Мониторы</router-link
     >
-    <router-link class="side-menu__link-item" to="/category/mice"
+    <router-link class="side-menu__link-item" :to="`/category/${CAT_MICE}`"
       >Мыши</router-link
     >
-    <router-link class="side-menu__link-item" to="/category/keyboards"
+    <router-link class="side-menu__link-item" :to="`/category/${CAT_KEYBOARDS}`"
       >Клавиатуры</router-link
     >
-    <router-link class="side-menu__link-item" to="/category/hdd"
+    <router-link class="side-menu__link-item" :to="`/category/${CAT_HDD}`"
       >Жёсткие диски</router-link
     >
-    <router-link class="side-menu__link-item" to="/category/ssd"
+    <router-link class="side-menu__link-item" :to="`/category/${CAT_SSD}`"
       >Твердотельные диски</router-link
     >
-    <router-link class="side-menu__link-item" to="/category/laptops"
+    <router-link class="side-menu__link-item" :to="`/category/${CAT_LAPTOPS}`"
       >Ноутбуки</router-link
     >
-    <router-link class="side-menu__link-item" to="/category/printers"
+    <router-link class="side-menu__link-item" :to="`/category/${CAT_PRINTERS}`"
       >Принтеры</router-link
     >
   </nav>
 </template>
 
 <script>
+import {
+  CAT_MONITORS,
+  CAT_MICE,
+  CAT_KEYBOARDS,
+  CAT_HDD,
+  CAT_SSD,
+  CAT_LAPTOPS,
+  CAT_PRINTERS,
+} from "@/helpers/categories-indices.js";
+
 export default {
   name: "SideMenu",
+  data() {
+    return {
+      CAT_MONITORS,
+      CAT_MICE,
+      CAT_KEYBOARDS,
+      CAT_HDD,
+      CAT_SSD,
+      CAT_LAPTOPS,
+      CAT_PRINTERS,
+    };
+  },
 };
 </script>
 

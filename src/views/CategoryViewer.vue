@@ -1,6 +1,5 @@
 <template>
   <div class="wrapper">
-    <h2>Вы смотрите категорию {{ this.$route.params.categoryName }}</h2>
     <div class="goods-container">
       <GoodItem v-for="item in goods" :key="item.id" :goodName="item.title" />
     </div>
@@ -23,12 +22,12 @@ export default {
   },
   created() {
     this.goods = goods.filter((item) => {
-      return item.category === this.$route.params.categoryName;
+      return +item.category === +this.$route.params.categoryIndex;
     });
   },
   beforeRouteUpdate(to, from, next) {
     this.goods = goods.filter((item) => {
-      return item.category === to.params.categoryName;
+      return +item.category === +to.params.categoryIndex;
     });
     next();
   },

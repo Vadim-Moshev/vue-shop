@@ -1,7 +1,17 @@
+import {
+  CAT_MONITORS,
+  CAT_MICE,
+  CAT_KEYBOARDS,
+  CAT_HDD,
+  CAT_SSD,
+  CAT_LAPTOPS,
+  CAT_PRINTERS,
+} from "@/helpers/categories-indices.js";
+
 export default [
   {
     id: "1-1",
-    category: "monitors",
+    category: CAT_MONITORS,
     title: "21.45 Монитор DEXP DF22N1 серебристый",
     photo: "dexp-df22n1.jpg",
     description:
@@ -10,7 +20,7 @@ export default [
   },
   {
     id: "1-2",
-    category: "monitors",
+    category: CAT_MONITORS,
     title: "19.5 Монитор Acer V206HQLAb черный",
     photo: "acer-v206hqlab.jpg",
     description:
@@ -19,7 +29,7 @@ export default [
   },
   {
     id: "1-3",
-    category: "monitors",
+    category: CAT_MONITORS,
     title: "Монитор AOC E970SWN черный",
     photo: "aoc-e970swn.jpg",
     description:
@@ -28,7 +38,7 @@ export default [
   },
   {
     id: "1-4",
-    category: "monitors",
+    category: CAT_MONITORS,
     title: "Монитор Philips 203V5LSB26 черный",
     photo: "philips-203v5lsb26.jpg",
     description:
@@ -37,7 +47,7 @@ export default [
   },
   {
     id: "1-5",
-    category: "monitors",
+    category: CAT_MONITORS,
     title: "21.5 Монитор Philips 221V8 черный",
     photo: "philips-221v8.jpg",
     description:
@@ -46,7 +56,7 @@ export default [
   },
   {
     id: "2-1",
-    category: "mice",
+    category: CAT_MICE,
     title: "Мышь проводная Aceline CM-408BU черный",
     photo: "aceline-cm-408bu.jpg",
     description: "800 dpi, светодиодный, USB Type-A, кнопки - 3",
@@ -54,7 +64,7 @@ export default [
   },
   {
     id: "2-2",
-    category: "mice",
+    category: CAT_MICE,
     title: "Мышь беспроводная DEXP WM-4005GU серый",
     photo: "dexp-wm-4005gu.jpg",
     description: "1600 dpi, светодиодный, USB Type-A, кнопки - 4",
@@ -62,7 +72,7 @@ export default [
   },
   {
     id: "2-3",
-    category: "mice",
+    category: CAT_MICE,
     title: "Мышь проводная DEXP Notos черный",
     photo: "dexp-notos.jpg",
     description: "2400 dpi, светодиодный, USB Type-A, кнопки - 6",
@@ -70,7 +80,7 @@ export default [
   },
   {
     id: "3-1",
-    category: "keyboards",
+    category: CAT_KEYBOARDS,
     title: "Клавиатура проводная Defender Spark GK-300L [45300]",
     photo: "defender-spark-gk-300l.jpg",
     description: "мембранная, клавиш - 104, USB, черная",
@@ -78,7 +88,7 @@ export default [
   },
   {
     id: "3-2",
-    category: "keyboards",
+    category: CAT_KEYBOARDS,
     title: "Клавиатура проводная Aceline K-505BU",
     photo: "aceline-k-505bu.jpg",
     description: "мембранная, клавиш - 112, USB, черная",
@@ -86,7 +96,7 @@ export default [
   },
   {
     id: "3-3",
-    category: "keyboards",
+    category: CAT_KEYBOARDS,
     title: "Клавиатура проводная ExeGate LY-401 [EX264086RUS]",
     photo: "exegate-ly-401.jpg",
     description: "мембранная, клавиш - 104, USB, серебристая",
@@ -94,7 +104,7 @@ export default [
   },
   {
     id: "3-4",
-    category: "keyboards",
+    category: CAT_KEYBOARDS,
     title: "Клавиатура проводная DEXP Sparkle",
     photo: "dexp-sparkle.jpg",
     description: "мембранная, клавиш - 112, USB, черная",
@@ -102,7 +112,7 @@ export default [
   },
   {
     id: "4-1",
-    category: "hdd",
+    category: CAT_HDD,
     title: "1 ТБ Жесткий диск Seagate SkyHawk [ST1000VX005]",
     photo: "seagate-skyhawk.jpg",
     description: "SATA III, 6 Гбит/с, 5900 об/мин, кэш память - 64 МБ",
@@ -110,7 +120,7 @@ export default [
   },
   {
     id: "4-2",
-    category: "hdd",
+    category: CAT_HDD,
     title: "1 ТБ Жесткий диск Toshiba DT01 [DT01ACA100]",
     photo: "toshiba-dt01.jpg",
     description: "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 32 МБ",
@@ -118,7 +128,7 @@ export default [
   },
   {
     id: "4-3",
-    category: "hdd",
+    category: CAT_HDD,
     title: "1 ТБ Жесткий диск Seagate BarraCuda [ST1000DM010]",
     photo: "seagate-barracuda.jpg",
     description: "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 64 МБ",
@@ -126,7 +136,7 @@ export default [
   },
   {
     id: "4-4",
-    category: "hdd",
+    category: CAT_HDD,
     title: "1 ТБ Жесткий диск WD Blue [WD10EZEX]",
     photo: "wd-blue.jpg",
     description: "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 64 МБ",
@@ -134,7 +144,7 @@ export default [
   },
   {
     id: "4-5",
-    category: "hdd",
+    category: CAT_HDD,
     title: "1 ТБ Жесткий диск Toshiba P300 [HDWD110UZSVA]",
     photo: "toshiba-p300.jpg",
     description: "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 64 МБ",
@@ -142,7 +152,7 @@ export default [
   },
   {
     id: "5-1",
-    category: "ssd",
+    category: CAT_SSD,
     title: "120 ГБ 2.5 SATA накопитель Apacer AS340 PANTHER [AP120GAS340G-1]",
     photo: "apacer-as340-panther.jpg",
     description:
@@ -151,7 +161,7 @@ export default [
   },
   {
     id: "5-2",
-    category: "ssd",
+    category: CAT_SSD,
     title: "120 ГБ 2.5 SATA накопитель AMD Radeon R5 Series [R5SL120G]",
     photo: "amd-radeon-r5-series.jpg",
     description:
@@ -160,7 +170,7 @@ export default [
   },
   {
     id: "5-3",
-    category: "ssd",
+    category: CAT_SSD,
     title: "120 ГБ 2.5 SATA накопитель Apacer AS340X [AP120GAS340XC-1]",
     photo: "apacer-as340x.jpg",
     description:
@@ -169,7 +179,7 @@ export default [
   },
   {
     id: "5-4",
-    category: "ssd",
+    category: CAT_SSD,
     title: "120 ГБ 2.5 SATA накопитель Smartbuy Nova [SBSSD120-NOV-25S3]",
     photo: "smartbuy-nova.jpg",
     description:
@@ -178,7 +188,7 @@ export default [
   },
   {
     id: "5-5",
-    category: "ssd",
+    category: CAT_SSD,
     title:
       "128 ГБ 2.5 SATA накопитель Neo Forza Zion NFS01 [NFS011SA328-6007200]",
     photo: "neo-forza-zion-nfs01.jpg",
@@ -188,7 +198,7 @@ export default [
   },
   {
     id: "6-1",
-    category: "laptops",
+    category: CAT_LAPTOPS,
     title: "15.6 Ноутбук Lenovo V15 ADA серый",
     photo: "lenovo-v15-ada.jpg",
     description:
@@ -197,7 +207,7 @@ export default [
   },
   {
     id: "6-2",
-    category: "laptops",
+    category: CAT_LAPTOPS,
     title: "14 Ноутбук Irbis NB257 серый",
     photo: "irbis-nb257.jpg",
     description:
@@ -206,7 +216,7 @@ export default [
   },
   {
     id: "6-3",
-    category: "laptops",
+    category: CAT_LAPTOPS,
     title: "14 Ноутбук DEXP Aquilon серебристый",
     photo: "dexp-aquilon.jpg",
     description:
@@ -215,7 +225,7 @@ export default [
   },
   {
     id: "6-4",
-    category: "laptops",
+    category: CAT_LAPTOPS,
     title: "15.6 Ноутбук ASUS Laptop 15 D543MA-DM1368 черный",
     photo: "asus-laptop-15-d543ma-dm1368.jpg",
     description:
@@ -224,7 +234,7 @@ export default [
   },
   {
     id: "7-1",
-    category: "printers",
+    category: CAT_PRINTERS,
     title: "Принтер лазерный Pantum P2500W",
     photo: "pantum-p2500w.jpg",
     description:
@@ -233,7 +243,7 @@ export default [
   },
   {
     id: "7-2",
-    category: "printers",
+    category: CAT_PRINTERS,
     title: "Принтер лазерный Pantum P2502",
     photo: "pantum-p2502.jpg",
     description:
@@ -242,7 +252,7 @@ export default [
   },
   {
     id: "7-3",
-    category: "printers",
+    category: CAT_PRINTERS,
     title: "Принтер лазерный Pantum P2200",
     photo: "pantum-p2200.jpg",
     description:
@@ -251,7 +261,7 @@ export default [
   },
   {
     id: "7-4",
-    category: "printers",
+    category: CAT_PRINTERS,
     title: "Принтер лазерный Pantum P2518",
     photo: "pantum-p2518.jpg",
     description:
