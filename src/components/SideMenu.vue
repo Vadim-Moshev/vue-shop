@@ -1,13 +1,25 @@
 <template>
   <nav class="side-menu">
+    <router-link class="side-menu__link-item" to="/category/monitors"
+      >Мониторы</router-link
+    >
     <router-link class="side-menu__link-item" to="/category/mice"
       >Мыши</router-link
     >
     <router-link class="side-menu__link-item" to="/category/keyboadrs"
       >Клавиатуры</router-link
     >
-    <router-link class="side-menu__link-item" to="/category/HDD"
+    <router-link class="side-menu__link-item" to="/category/hdd"
       >Жёсткие диски</router-link
+    >
+    <router-link class="side-menu__link-item" to="/category/ssd"
+      >Твердотельные диски</router-link
+    >
+    <router-link class="side-menu__link-item" to="/category/laptops"
+      >Ноутбуки</router-link
+    >
+    <router-link class="side-menu__link-item" to="/category/printers"
+      >Принтеры</router-link
     >
   </nav>
 </template>
