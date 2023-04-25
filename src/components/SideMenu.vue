@@ -6,7 +6,7 @@
     <router-link class="side-menu__link-item" to="/category/mice"
       >Мыши</router-link
     >
-    <router-link class="side-menu__link-item" to="/category/keyboadrs"
+    <router-link class="side-menu__link-item" to="/category/keyboards"
       >Клавиатуры</router-link
     >
     <router-link class="side-menu__link-item" to="/category/hdd"
