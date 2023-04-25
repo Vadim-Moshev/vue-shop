@@ -10,7 +10,7 @@
 import GoodItem from "@/components/GoodItem";
 import goods from "@/mocks/goods";
 
-function getGoodsByCategory(goods, index) {
+function getGoodsByCategory(index) {
   const categoryIndex = Number(index);
   return goods.filter((item) => {
     return Number(item.category) === categoryIndex;
@@ -29,11 +29,11 @@ export default {
   },
   created() {
     const categoryIndex = this.$route.params.categoryIndex;
-    this.goods = getGoodsByCategory(goods, categoryIndex);
+    this.goods = getGoodsByCategory(categoryIndex);
   },
   beforeRouteUpdate(to, from, next) {
     const categoryIndex = to.params.categoryIndex;
-    this.goods = getGoodsByCategory(goods, categoryIndex);
+    this.goods = getGoodsByCategory(categoryIndex);
     next();
   },
 };
