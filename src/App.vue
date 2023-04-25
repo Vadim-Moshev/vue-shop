@@ -7,7 +7,9 @@
   </header>
   <main class="main">
     <SideMenu />
-    <router-view />
+    <div class="router-view-container">
+      <router-view />
+    </div>
   </main>
   <footer class="footer"></footer>
 </template>
@@ -69,6 +71,10 @@ body {
   align-items: stretch;
   flex: auto;
   height: 100%;
+}
+
+.router-view-container {
+  padding-top: 20px;
 }
 
 .footer {
