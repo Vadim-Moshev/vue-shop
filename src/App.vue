@@ -75,6 +75,8 @@ body {
 
 .router-view-container {
   padding-top: 20px;
+  flex-grow: 1;
+  text-align: left;
 }
 
 .footer {
