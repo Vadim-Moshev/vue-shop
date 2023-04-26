@@ -46,6 +46,7 @@ export default {
 
 .goods-container {
   display: flex;
+  flex-direction: column;
   gap: 5px;
   flex-wrap: wrap;
 }
