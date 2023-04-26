@@ -9,6 +9,14 @@
         ducimus incidunt quam sint laboriosam ea corrupti! Delectus omnis enim
         cumque iusto!
       </p>
+      <div class="good-item__price">12 345 Руб.</div>
+    </div>
+    <div class="good-item__controls">
+      <input
+        class="good-item__add-to-cart-button"
+        type="button"
+        value="В корзину"
+      />
     </div>
   </div>
 </template>
@@ -30,6 +38,10 @@ export default {
   padding: 15px;
 }
 
+.good-item:last-child {
+  border-bottom: none;
+}
+
 .good-item__image {
   width: 100px;
   height: 100px;
@@ -41,6 +53,7 @@ export default {
   flex-grow: 1;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .good-item__title {
@@ -48,5 +61,29 @@ export default {
 }
 
 .good-item__description {
+}
+
+.good-item__price {
+  color: navy;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.good-item__controls {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.good-item__add-to-cart-button {
+  cursor: pointer;
+  background-color: navy;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
 }
 </style>
