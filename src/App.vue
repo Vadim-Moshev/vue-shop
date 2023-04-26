@@ -40,6 +40,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  width: 1360px;
+  margin: 0 auto;
 }
 
 .header {
