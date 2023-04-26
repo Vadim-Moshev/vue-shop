@@ -1,7 +1,15 @@
 <template>
   <div class="wrapper">
     <div class="goods-container">
-      <GoodItem v-for="item in goods" :key="item.id" :goodName="item.title" />
+      <GoodItem
+        v-for="item in goods"
+        :key="item.id"
+        :title="item.title"
+        :photo="item.photo"
+        :description="item.description"
+        :price="item.price"
+        :categoryNameEng="item.categoryNameEng"
+      />
     </div>
   </div>
 </template>

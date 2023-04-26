@@ -18,7 +18,7 @@ export default [
     photo: "dexp-df22n1.jpg",
     description:
       "1920x1080 (FullHD)@75 Гц, VA, 3000 : 1, 250 Кд/м², 170°/170°, HDMI 1.4, VGA (D-Sub), AMD FreeSync",
-    price: "6500",
+    price: 6500,
   },
   {
     id: "1-2",
@@ -29,7 +29,7 @@ export default [
     photo: "acer-v206hqlab.jpg",
     description:
       "1600x900@60 Гц, TN, 5 мс, 600 : 1, 200 Кд/м², 90°/65°, VGA (D-Sub)",
-    price: "7500",
+    price: 7500,
   },
   {
     id: "1-3",
@@ -40,7 +40,7 @@ export default [
     photo: "aoc-e970swn.jpg",
     description:
       "1366x768@60 Гц, TN, 5 мс, 700 : 1, 200 Кд/м², 90°/65°, VGA (D-Sub)",
-    price: "7600",
+    price: 7600,
   },
   {
     id: "1-4",
@@ -51,7 +51,7 @@ export default [
     photo: "philips-203v5lsb26.jpg",
     description:
       "1600x900@60 Гц, TN, 5 мс, 600 : 1, 200 Кд/м², 90°/50°, VGA (D-Sub)",
-    price: "7700",
+    price: 7700,
   },
   {
     id: "1-5",
@@ -62,7 +62,7 @@ export default [
     photo: "philips-221v8.jpg",
     description:
       "1920x1080 (FullHD)@75 Гц, VA, 3000 : 1, 250 Кд/м², 178°/178°, HDMI 1.4, VGA (D-Sub), AMD FreeSync",
-    price: "7700",
+    price: 7700,
   },
   {
     id: "2-1",
@@ -72,7 +72,7 @@ export default [
     title: "Мышь проводная Aceline CM-408BU черный",
     photo: "aceline-cm-408bu.jpg",
     description: "800 dpi, светодиодный, USB Type-A, кнопки - 3",
-    price: "100",
+    price: 100,
   },
   {
     id: "2-2",
@@ -82,7 +82,7 @@ export default [
     title: "Мышь беспроводная DEXP WM-4005GU серый",
     photo: "dexp-wm-4005gu.jpg",
     description: "1600 dpi, светодиодный, USB Type-A, кнопки - 4",
-    price: "150",
+    price: 150,
   },
   {
     id: "2-3",
@@ -92,7 +92,7 @@ export default [
     title: "Мышь проводная DEXP Notos черный",
     photo: "dexp-notos.jpg",
     description: "2400 dpi, светодиодный, USB Type-A, кнопки - 6",
-    price: "160",
+    price: 160,
   },
   {
     id: "3-1",
@@ -102,7 +102,7 @@ export default [
     title: "Клавиатура проводная Defender Spark GK-300L [45300]",
     photo: "defender-spark-gk-300l.jpg",
     description: "мембранная, клавиш - 104, USB, черная",
-    price: "650",
+    price: 650,
   },
   {
     id: "3-2",
@@ -112,7 +112,7 @@ export default [
     title: "Клавиатура проводная Aceline K-505BU",
     photo: "aceline-k-505bu.jpg",
     description: "мембранная, клавиш - 112, USB, черная",
-    price: "299",
+    price: 299,
   },
   {
     id: "3-3",
@@ -122,7 +122,7 @@ export default [
     title: "Клавиатура проводная ExeGate LY-401 [EX264086RUS]",
     photo: "exegate-ly-401.jpg",
     description: "мембранная, клавиш - 104, USB, серебристая",
-    price: "299",
+    price: 299,
   },
   {
     id: "3-4",
@@ -132,7 +132,7 @@ export default [
     title: "Клавиатура проводная DEXP Sparkle",
     photo: "dexp-sparkle.jpg",
     description: "мембранная, клавиш - 112, USB, черная",
-    price: "650",
+    price: 650,
   },
   {
     id: "4-1",
@@ -142,7 +142,7 @@ export default [
     title: "1 ТБ Жесткий диск Seagate SkyHawk [ST1000VX005]",
     photo: "seagate-skyhawk.jpg",
     description: "SATA III, 6 Гбит/с, 5900 об/мин, кэш память - 64 МБ",
-    price: "3800",
+    price: 3800,
   },
   {
     id: "4-2",
@@ -152,7 +152,7 @@ export default [
     title: "1 ТБ Жесткий диск Toshiba DT01 [DT01ACA100]",
     photo: "toshiba-dt01.jpg",
     description: "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 32 МБ",
-    price: "2900",
+    price: 2900,
   },
   {
     id: "4-3",
@@ -162,7 +162,7 @@ export default [
     title: "1 ТБ Жесткий диск Seagate BarraCuda [ST1000DM010]",
     photo: "seagate-barracuda.jpg",
     description: "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 64 МБ",
-    price: "3100",
+    price: 3100,
   },
   {
     id: "4-4",
@@ -172,7 +172,7 @@ export default [
     title: "1 ТБ Жесткий диск WD Blue [WD10EZEX]",
     photo: "wd-blue.jpg",
     description: "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 64 МБ",
-    price: "3200",
+    price: 3200,
   },
   {
     id: "4-5",
@@ -182,7 +182,7 @@ export default [
     title: "1 ТБ Жесткий диск Toshiba P300 [HDWD110UZSVA]",
     photo: "toshiba-p300.jpg",
     description: "SATA III, 6 Гбит/с, 7200 об/мин, кэш память - 64 МБ",
-    price: "3300",
+    price: 3300,
   },
   {
     id: "5-1",
@@ -193,7 +193,7 @@ export default [
     photo: "apacer-as340-panther.jpg",
     description:
       "SATA, чтение - 550 Мбайт/сек, запись - 520 Мбайт/сек, 3D NAND 3 бит TLC",
-    price: "1100",
+    price: 1100,
   },
   {
     id: "5-2",
@@ -204,7 +204,7 @@ export default [
     photo: "amd-radeon-r5-series.jpg",
     description:
       "SATA, чтение - 520 Мбайт/сек, запись - 290 Мбайт/сек, 3D NAND 3 бит TLC",
-    price: "950",
+    price: 950,
   },
   {
     id: "5-3",
@@ -215,7 +215,7 @@ export default [
     photo: "apacer-as340x.jpg",
     description:
       "SATA, чтение - 550 Мбайт/сек, запись - 500 Мбайт/сек, 3D NAND 3 бит TLC",
-    price: "999",
+    price: 999,
   },
   {
     id: "5-4",
@@ -226,7 +226,7 @@ export default [
     photo: "smartbuy-nova.jpg",
     description:
       "SATA, чтение - 520 Мбайт/сек, запись - 490 Мбайт/сек, 3D NAND 3 бит TLC",
-    price: "999",
+    price: 999,
   },
   {
     id: "5-5",
@@ -238,7 +238,7 @@ export default [
     photo: "neo-forza-zion-nfs01.jpg",
     description:
       "SATA, чтение - 560 Мбайт/сек, запись - 490 Мбайт/сек, 3D NAND 3 бит TLC",
-    price: "999",
+    price: 999,
   },
   {
     id: "6-1",
@@ -249,7 +249,7 @@ export default [
     photo: "lenovo-v15-ada.jpg",
     description:
       "Full HD (1920x1080), TN+film, AMD 3020e, ядра: 2 х 1.2 ГГц, RAM 4 ГБ, SSD 128 ГБ, AMD Radeon Graphics , без ОС",
-    price: "23899",
+    price: 23899,
   },
   {
     id: "6-2",
@@ -260,7 +260,7 @@ export default [
     photo: "irbis-nb257.jpg",
     description:
       "HD (1366x768), IPS, Intel Celeron 3350, ядра: 2 х 1.1 ГГц, RAM 4 ГБ, eMMC 64 ГБ, Intel HD Graphics 500 , Windows 10 Home Single Language",
-    price: "15999",
+    price: 15999,
   },
   {
     id: "6-3",
@@ -271,7 +271,7 @@ export default [
     photo: "dexp-aquilon.jpg",
     description:
       "Full HD (1920x1080), IPS, Intel Celeron N4020, ядра: 2 х 1.1 ГГц, RAM 4 ГБ, SSD 128 ГБ, Intel UHD Graphics 600 , Windows 11 Pro",
-    price: "14299",
+    price: 14299,
   },
   {
     id: "6-4",
@@ -282,7 +282,7 @@ export default [
     photo: "asus-laptop-15-d543ma-dm1368.jpg",
     description:
       "Full HD (1920x1080), TN+film, Intel Celeron N4020, ядра: 2 х 1.1 ГГц, RAM 4 ГБ, HDD 1000 ГБ, Intel UHD Graphics , без ОС",
-    price: "19999",
+    price: 19999,
   },
   {
     id: "7-1",
@@ -293,7 +293,7 @@ export default [
     photo: "pantum-p2500w.jpg",
     description:
       "черно-белая печать, A4, 1200x1200 dpi, ч/б - 22 стр/мин (A4), USB, Wi-Fi",
-    price: "9500",
+    price: 9500,
   },
   {
     id: "7-2",
@@ -304,7 +304,7 @@ export default [
     photo: "pantum-p2502.jpg",
     description:
       "черно-белая печать, A4, 1200x1200 dpi, ч/б - 22 стр/мин (A4), USB 2.0",
-    price: "8500",
+    price: 8500,
   },
   {
     id: "7-3",
@@ -315,7 +315,7 @@ export default [
     photo: "pantum-p2200.jpg",
     description:
       "черно-белая печать, A4, 1200x1200 dpi, ч/б - 20 стр/мин (A4), USB",
-    price: "9000",
+    price: 9000,
   },
   {
     id: "7-4",
@@ -326,6 +326,6 @@ export default [
     photo: "pantum-p2518.jpg",
     description:
       "черно-белая печать, A4, 600x600 dpi, ч/б - 22 стр/мин (A4), USB 2.0",
-    price: "9000",
+    price: 9000,
   },
 ];
