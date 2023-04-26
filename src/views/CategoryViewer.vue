@@ -4,6 +4,7 @@
       <GoodItem
         v-for="item in goods"
         :key="item.id"
+        :id="item.id"
         :title="item.title"
         :photo="item.photo"
         :description="item.description"

@@ -2,7 +2,9 @@
   <div class="good-item">
     <img class="good-item__image" :src="pathToPhoto" alt="" />
     <div class="good-item__info">
-      <router-link to="/" class="good-item__title">{{ title }}</router-link>
+      <router-link :to="`/goodpage/${id}`" class="good-item__title">{{
+        title
+      }}</router-link>
       <p class="good-item__description">
         {{ description }}
       </p>
@@ -24,6 +26,7 @@ import formatNumber from "@/helpers/format-number.js";
 export default {
   name: "GoodItem",
   props: {
+    id: String,
     title: String,
     description: String,
     price: Number,
