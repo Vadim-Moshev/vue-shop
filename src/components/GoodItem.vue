@@ -28,8 +28,6 @@ export default {
   gap: 15px;
   border-bottom: 1px solid navy;
   padding: 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .good-item__image {
@@ -50,8 +48,5 @@ export default {
 }
 
 .good-item__description {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 </style>
