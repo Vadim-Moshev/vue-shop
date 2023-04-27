@@ -7,6 +7,7 @@
         {{ good.description }}
       </p>
       <p class="good-price">{{ priceString }}</p>
+      <GoodCounter />
     </div>
   </div>
 </template>
@@ -15,8 +16,13 @@
 import goods from "@/mocks/goods.js";
 import formatNumber from "@/helpers/format-number.js";
 
+import GoodCounter from "@/components/GoodCounter";
+
 export default {
   name: "GoodPage",
+  components: {
+    GoodCounter,
+  },
   date() {
     return {
       good: {},
