@@ -1,12 +1,12 @@
 <template>
-  <router-link to="/shopcart" class="cart-link">{{ Somecaption }}</router-link>
+  <router-link to="/shopcart" class="cart-link">{{ caption }}</router-link>
 </template>
 
 <script>
 export default {
   name: "ShopCartLink",
   props: {
-    Somecaption: String,
+    caption: String,
   },
 };
 </script>

@@ -3,7 +3,7 @@
     <router-link to="/" class="logo"
       >Интернет-магазин компьютерной техники</router-link
     >
-    <router-link to="/shopcart" class="cart-link">Корзина</router-link>
+    <ShopCartLink :caption="`Корзина`" />
   </header>
   <main class="main">
     <SideMenu />
@@ -16,11 +16,13 @@
 
 <script>
 import SideMenu from "@/components/SideMenu";
+import ShopCartLink from "@/components/ShopCartLink";
 
 export default {
   name: "App",
   components: {
     SideMenu,
+    ShopCartLink,
   },
 };
 </script>
