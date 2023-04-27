@@ -10,15 +10,20 @@
       </p>
       <div class="good-item__price">{{ priceString }}</div>
     </div>
-    <div class="good-item__controls"></div>
+    <GoodControlPanel />
   </div>
 </template>
 
 <script>
 import formatNumber from "@/helpers/format-number.js";
 
+import GoodControlPanel from "@/components/GoodControlPanel";
+
 export default {
   name: "GoodItem",
+  components: {
+    GoodControlPanel,
+  },
   props: {
     id: String,
     title: String,
