@@ -7,7 +7,7 @@
         {{ good.description }}
       </p>
       <p class="good-price">{{ priceString }}</p>
-      <GoodControlPanel />
+      <GoodControlPanel :bought="false" />
     </div>
   </div>
 </template>

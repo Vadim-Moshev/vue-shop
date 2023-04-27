@@ -1,6 +1,6 @@
 <template>
   <div class="good-control-panel">
-    <template v-if="condition">
+    <template v-if="bought">
       <div class="good-control-panel__notification">Товар в корзине</div>
       <input
         class="good-control-panel__button"
@@ -23,13 +23,11 @@ import GoodCounter from "@/components/GoodCounter";
 
 export default {
   name: "GoodControlPanel",
+  props: {
+    bought: Boolean,
+  },
   components: {
     GoodCounter,
-  },
-  computed: {
-    condition() {
-      return true;
-    },
   },
 };
 </script>
