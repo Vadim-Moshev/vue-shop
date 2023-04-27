@@ -10,13 +10,7 @@
       </p>
       <div class="good-item__price">{{ priceString }}</div>
     </div>
-    <div class="good-item__controls">
-      <input
-        class="good-item__add-to-cart-button"
-        type="button"
-        value="В корзину"
-      />
-    </div>
+    <div class="good-item__controls"></div>
   </div>
 </template>
 
@@ -84,15 +78,5 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.good-item__add-to-cart-button {
-  cursor: pointer;
-  background-color: navy;
-  color: #fff;
-  font-weight: bold;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
 }
 </style>
