@@ -3,7 +3,7 @@
     <router-link to="/" class="logo"
       >Интернет-магазин компьютерной техники</router-link
     >
-    <ShopCartLink :caption="`Корзина`" />
+    <ShopCartLink :caption="shopCartCaption" />
   </header>
   <main class="main">
     <SideMenu />
@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import boughtGoodsStorage from "@/mocks/bought-goods-storage";
+
 import SideMenu from "@/components/SideMenu";
 import ShopCartLink from "@/components/ShopCartLink";
 
@@ -23,6 +25,23 @@ export default {
   components: {
     SideMenu,
     ShopCartLink,
+  },
+  data() {
+    return {
+      cartSize: 0,
+      totalPrice: 0,
+    };
+  },
+  created() {
+    this.cartSize = boughtGoodsStorage.cartSize;
+    this.totalPrice = boughtGoodsStorage.totalPrice;
+  },
+  computed: {
+    shopCartCaption() {
+      return this.totalPrice === 0
+        ? `Корзина (нет товаров)`
+        : `Корзина (Товаров ${this.cartSize} | ${this.totalPrice} Руб.)`;
+    },
   },
 };
 </script>
