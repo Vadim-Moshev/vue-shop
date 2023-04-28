@@ -38,6 +38,20 @@ class BoughtGoodsStorage {
   get totalPrice() {
     return this.#totalPrice;
   }
+
+  addGoodToCart(id, price) {
+    this.#totalPrice += price;
+    this.#cartSize++;
+
+    const cart = this.#cartContent;
+    if (cart[id] === null) {
+      cart[id] = 1;
+    } else {
+      cart[id]++;
+    }
+
+    localStorage.setItem("shopCart", JSON.stringify(cart));
+  }
 }
 
 export default new BoughtGoodsStorage();
