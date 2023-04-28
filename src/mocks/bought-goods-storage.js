@@ -58,6 +58,10 @@ class BoughtGoodsStorage {
 
     localStorage.setItem("shopCart", JSON.stringify(obj));
   }
+
+  isBought(id) {
+    return Object.keys(this.#cartContent).includes(id);
+  }
 }
 
 export default new BoughtGoodsStorage();
