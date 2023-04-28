@@ -10,6 +10,7 @@
         :description="item.description"
         :price="item.price"
         :categoryNameEng="item.categoryNameEng"
+        :isBought="item.isBought"
         @addgoodtocart="
           (payload) => {
             $emit('addgoodtocart', payload);
@@ -23,12 +24,18 @@
 <script>
 import GoodItem from "@/components/GoodItem";
 import goods from "@/mocks/goods";
+import boughtGoodsStorage from "@/mocks/bought-goods-storage";
 
 function getGoodsByCategory(index) {
   const categoryIndex = Number(index);
-  return goods.filter((item) => {
+  const filteredGoods = goods.filter((item) => {
     return Number(item.category) === categoryIndex;
   });
+  filteredGoods.forEach((good) => {
+    good.isBought = boughtGoodsStorage.isBought(good.id);
+  });
+
+  return filteredGoods;
 }
 
 export default {

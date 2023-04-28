@@ -10,7 +10,10 @@
       </p>
       <div class="good-item__price">{{ priceString }}</div>
     </div>
-    <GoodControlPanel @addgoodtocart="$emit('addgoodtocart', { id, price })" />
+    <GoodControlPanel
+      @addgoodtocart="$emit('addgoodtocart', { id, price })"
+      :isBought="isBought"
+    />
   </div>
 </template>
 
@@ -32,6 +35,7 @@ export default {
     price: Number,
     categoryNameEng: String,
     photo: String,
+    isBought: Boolean,
   },
   computed: {
     priceString() {
