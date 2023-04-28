@@ -37,7 +37,7 @@ export default {
   components: {
     GoodItem,
   },
-  date() {
+  data() {
     return {
       goods: [],
     };
