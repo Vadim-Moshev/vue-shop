@@ -8,7 +8,7 @@
   <main class="main">
     <SideMenu />
     <div class="router-view-container">
-      <router-view />
+      <router-view @addGoodToCart="addGoodToCart" />
     </div>
   </main>
   <footer class="footer"></footer>
@@ -41,6 +41,14 @@ export default {
       return this.totalPrice === 0
         ? `Корзина (нет товаров)`
         : `Корзина (Товаров ${this.cartSize} | ${this.totalPrice} Руб.)`;
+    },
+  },
+  methods: {
+    addGoodToCart({ id, price }) {
+      boughtGoodsStorage.addGoodToCart(id, price);
+
+      this.cartSize = boughtGoodsStorage.cartSize;
+      this.totalPrice = boughtGoodsStorage.totalPrice;
     },
   },
 };

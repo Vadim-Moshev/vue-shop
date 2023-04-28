@@ -10,6 +10,11 @@
         :description="item.description"
         :price="item.price"
         :categoryNameEng="item.categoryNameEng"
+        @addGoodToCart="
+          (payload) => {
+            $emit('addGoodToCart', payload);
+          }
+        "
       />
     </div>
   </div>

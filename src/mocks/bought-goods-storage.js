@@ -44,13 +44,19 @@ class BoughtGoodsStorage {
     this.#cartSize++;
 
     const cart = this.#cartContent;
-    if (cart[id] === null) {
+    if (typeof cart[id] !== "number") {
       cart[id] = 1;
     } else {
       cart[id]++;
     }
 
-    localStorage.setItem("shopCart", JSON.stringify(cart));
+    const obj = {
+      cartContent: cart,
+      totalPrice: this.#totalPrice,
+      cartSize: this.#cartSize,
+    };
+
+    localStorage.setItem("shopCart", JSON.stringify(obj));
   }
 }
 

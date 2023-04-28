@@ -10,7 +10,7 @@
       </p>
       <div class="good-item__price">{{ priceString }}</div>
     </div>
-    <GoodControlPanel />
+    <GoodControlPanel @addGoodToCart="$emit('addGoodToCart', { id, price })" />
   </div>
 </template>
 
