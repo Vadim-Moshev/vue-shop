@@ -7,7 +7,10 @@
         {{ good.description }}
       </p>
       <p class="good-price">{{ priceString }}</p>
-      <GoodControlPanel :bought="false" />
+      <GoodControlPanel
+        :bought="false"
+        @addgoodtocart="$emit('addgoodtocart', payload)"
+      />
     </div>
   </div>
 </template>
@@ -20,6 +23,7 @@ import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
   name: "GoodPage",
+  emits: ["addgoodtocart"],
   components: {
     GoodControlPanel,
   },
@@ -43,6 +47,12 @@ export default {
     priceString() {
       const price = formatNumber(this.good.price);
       return `${price} Руб.`;
+    },
+    payload() {
+      return {
+        id: this.good.id,
+        price: this.good.price,
+      };
     },
   },
 };

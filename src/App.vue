@@ -8,7 +8,7 @@
   <main class="main">
     <SideMenu />
     <div class="router-view-container">
-      <router-view @addGoodToCart="addGoodToCart" />
+      <router-view @addgoodtocart="addGoodToCart" />
     </div>
   </main>
   <footer class="footer"></footer>

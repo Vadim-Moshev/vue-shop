@@ -10,9 +10,9 @@
         :description="item.description"
         :price="item.price"
         :categoryNameEng="item.categoryNameEng"
-        @addGoodToCart="
+        @addgoodtocart="
           (payload) => {
-            $emit('addGoodToCart', payload);
+            $emit('addgoodtocart', payload);
           }
         "
       />
@@ -33,6 +33,7 @@ function getGoodsByCategory(index) {
 
 export default {
   name: "CategoryViewer",
+  emits: ["addgoodtocart"],
   components: {
     GoodItem,
   },

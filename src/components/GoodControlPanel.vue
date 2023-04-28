@@ -14,7 +14,7 @@
       class="good-control-panel__button"
       type="button"
       value="В ворзину"
-      @click="$emit('addGoodToCart')"
+      @click="$emit('addgoodtocart')"
     />
   </div>
 </template>
@@ -24,6 +24,7 @@ import GoodCounter from "@/components/GoodCounter";
 
 export default {
   name: "GoodControlPanel",
+  emits: ["addgoodtocart"],
   props: {
     bought: Boolean,
   },
