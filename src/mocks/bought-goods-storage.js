@@ -59,6 +59,26 @@ class BoughtGoodsStorage {
     localStorage.setItem("shopCart", JSON.stringify(obj));
   }
 
+  removeGoodFromCart(id, price) {
+    this.#totalPrice -= price;
+    this.#cartSize--;
+
+    const cart = this.#cartContent;
+    if (cart[id] > 1) {
+      cart[id]--;
+    } else {
+      delete cart[id];
+    }
+
+    const obj = {
+      cartContent: cart,
+      totalPrice: this.#totalPrice,
+      cartSize: this.#cartSize,
+    };
+
+    localStorage.setItem("shopCart", JSON.stringify(obj));
+  }
+
   isBought(id) {
     return Object.keys(this.#cartContent).includes(id);
   }
