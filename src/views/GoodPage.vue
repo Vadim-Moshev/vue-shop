@@ -10,6 +10,7 @@
       <GoodControlPanel
         :isBought="good.isBought"
         @addgoodtocart="addGoodToCart"
+        @removegoodfromcart="removeGoodFromCart"
       />
     </div>
   </div>
@@ -24,7 +25,7 @@ import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
   name: "GoodPage",
-  emits: ["addgoodtocart"],
+  emits: ["addgoodtocart", "removegoodfromcart"],
   components: {
     GoodControlPanel,
   },
@@ -47,6 +48,14 @@ export default {
       });
 
       this.good.isBought = true;
+    },
+    removeGoodFromCart() {
+      this.$emit("removegoodfromcart", {
+        id: this.good.id,
+        price: this.good.price,
+      });
+
+      this.good.isBought = false;
     },
   },
   computed: {
