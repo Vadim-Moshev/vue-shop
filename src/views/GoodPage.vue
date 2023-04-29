@@ -8,8 +8,8 @@
       </p>
       <p class="good-price">{{ priceString }}</p>
       <GoodControlPanel
-        :bought="false"
-        @addgoodtocart="$emit('addgoodtocart', payload)"
+        :isBought="good.isBought"
+        @addgoodtocart="addGoodToCart"
       />
     </div>
   </div>
@@ -18,6 +18,7 @@
 <script>
 import goods from "@/mocks/goods.js";
 import formatNumber from "@/helpers/format-number.js";
+import boughtGoodsStorage from "@/mocks/bought-goods-storage.js";
 
 import GoodControlPanel from "@/components/GoodControlPanel";
 
@@ -36,6 +37,17 @@ export default {
     this.good = goods.find((item) => {
       return item.id === this.$route.params.id;
     });
+    this.good.isBought = boughtGoodsStorage.isBought(this.good.id);
+  },
+  methods: {
+    addGoodToCart() {
+      this.$emit("addgoodtocart", {
+        id: this.good.id,
+        price: this.good.price,
+      });
+
+      this.good.isBought = true;
+    },
   },
   computed: {
     pathToPhoto() {
@@ -47,12 +59,6 @@ export default {
     priceString() {
       const price = formatNumber(this.good.price);
       return `${price} Руб.`;
-    },
-    payload() {
-      return {
-        id: this.good.id,
-        price: this.good.price,
-      };
     },
   },
 };
