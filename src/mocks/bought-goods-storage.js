@@ -1,3 +1,7 @@
+function addToStorage(obj) {
+  localStorage.setItem("shopCart", JSON.stringify(obj));
+}
+
 class BoughtGoodsStorage {
   #totalPrice = 0;
   #cartSize = 0;
@@ -9,13 +13,11 @@ class BoughtGoodsStorage {
       this.#totalPrice = 0;
       this.#cartSize = 0;
 
-      const obj = {
+      addToStorage({
         cartContent: {},
         totalPrice: 0,
         cartSize: 0,
-      };
-
-      localStorage.setItem("shopCart", JSON.stringify(obj));
+      });
       return;
     }
 
@@ -48,13 +50,11 @@ class BoughtGoodsStorage {
       cart[id]++;
     }
 
-    const obj = {
+    addToStorage({
       cartContent: cart,
       totalPrice: this.#totalPrice,
       cartSize: this.#cartSize,
-    };
-
-    localStorage.setItem("shopCart", JSON.stringify(obj));
+    });
   }
 
   removeGoodFromCart(id, price) {
@@ -68,13 +68,11 @@ class BoughtGoodsStorage {
       delete cart[id];
     }
 
-    const obj = {
+    addToStorage({
       cartContent: cart,
       totalPrice: this.#totalPrice,
       cartSize: this.#cartSize,
-    };
-
-    localStorage.setItem("shopCart", JSON.stringify(obj));
+    });
   }
 
   isBought(id) {
