@@ -12,6 +12,7 @@
         :categoryNameEng="item.categoryNameEng"
         :isBought="item.isBought"
         @addgoodtocart="addGoodToCart"
+        @removegoodfromcart="removeGoodFromCart"
       />
     </div>
   </div>
@@ -36,7 +37,7 @@ function getGoodsByCategory(index) {
 
 export default {
   name: "CategoryViewer",
-  emits: ["addgoodtocart"],
+  emits: ["addgoodtocart", "removegoodfromcart"],
   components: {
     GoodItem,
   },
@@ -61,6 +62,13 @@ export default {
       const { id } = payload;
       const targetGoodIndex = this.goods.findIndex((good) => good.id === id);
       this.goods[targetGoodIndex].isBought = true;
+    },
+    removeGoodFromCart(payload) {
+      this.$emit("removegoodfromcart", payload);
+
+      const { id } = payload;
+      const targetGoodIndex = this.goods.findIndex((good) => good.id === id);
+      this.goods[targetGoodIndex].isBought = false;
     },
   },
 };

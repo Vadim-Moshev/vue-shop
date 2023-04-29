@@ -8,7 +8,10 @@
   <main class="main">
     <SideMenu />
     <div class="router-view-container">
-      <router-view @addgoodtocart="addGoodToCart" />
+      <router-view
+        @addgoodtocart="addGoodToCart"
+        @removegoodfromcart="removeGoodFromCart"
+      />
     </div>
   </main>
   <footer class="footer"></footer>
@@ -46,6 +49,12 @@ export default {
   methods: {
     addGoodToCart({ id, price }) {
       boughtGoodsStorage.addGoodToCart(id, price);
+
+      this.cartSize = boughtGoodsStorage.cartSize;
+      this.totalPrice = boughtGoodsStorage.totalPrice;
+    },
+    removeGoodFromCart({ id, price }) {
+      boughtGoodsStorage.removeGoodFromCart(id, price);
 
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;

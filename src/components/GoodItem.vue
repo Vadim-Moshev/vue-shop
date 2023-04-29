@@ -11,8 +11,9 @@
       <div class="good-item__price">{{ priceString }}</div>
     </div>
     <GoodControlPanel
-      @addgoodtocart="$emit('addgoodtocart', { id, price })"
       :isBought="isBought"
+      @addgoodtocart="$emit('addgoodtocart', { id, price })"
+      @removegoodfromcart="$emit('removegoodfromcart', { id, price })"
     />
   </div>
 </template>
@@ -24,7 +25,7 @@ import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
   name: "GoodItem",
-  emits: ["addgoodtocart"],
+  emits: ["addgoodtocart", "removegoodfromcart"],
   components: {
     GoodControlPanel,
   },
