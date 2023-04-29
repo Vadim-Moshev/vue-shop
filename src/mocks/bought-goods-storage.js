@@ -1,5 +1,3 @@
-// import goods from "./goods";
-
 class BoughtGoodsStorage {
   #totalPrice = 0;
   #cartSize = 0;
