@@ -27,7 +27,7 @@ export default {
   components: {
     GoodControlPanel,
   },
-  date() {
+  data() {
     return {
       good: {},
     };
