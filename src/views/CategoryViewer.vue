@@ -11,11 +11,7 @@
         :price="item.price"
         :categoryNameEng="item.categoryNameEng"
         :isBought="item.isBought"
-        @addgoodtocart="
-          (payload) => {
-            $emit('addgoodtocart', payload);
-          }
-        "
+        @addgoodtocart="addGoodToCart"
       />
     </div>
   </div>
@@ -57,6 +53,15 @@ export default {
     const categoryIndex = to.params.categoryIndex;
     this.goods = getGoodsByCategory(categoryIndex);
     next();
+  },
+  methods: {
+    addGoodToCart(payload) {
+      this.$emit("addgoodtocart", payload);
+
+      const { id } = payload;
+      const targetGoodIndex = this.goods.findIndex((good) => good.id === id);
+      this.goods[targetGoodIndex].isBought = true;
+    },
   },
 };
 </script>
