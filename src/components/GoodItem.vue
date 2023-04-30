@@ -12,6 +12,7 @@
     </div>
     <GoodControlPanel
       :isBought="isBought"
+      :countInCart="countInCart"
       @addgoodtocart="$emit('addgoodtocart', { id, price })"
       @removegoodfromcart="$emit('removegoodfromcart', { id, price })"
       @incrementgood="$emit('incrementgood', { id, price })"
@@ -38,6 +39,7 @@ export default {
     categoryNameEng: String,
     photo: String,
     isBought: Boolean,
+    countInCart: Number,
   },
   computed: {
     priceString() {

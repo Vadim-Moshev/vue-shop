@@ -22,10 +22,14 @@ const MAX_VAL = 999;
 
 export default {
   name: "GoodCounter",
+  props: {
+    countInCart: Number,
+  },
   emits: ["incrementgood"],
   data() {
+    // console.log("А это я: ", this.countInCart);
     return {
-      counterValue: MIN_VAL,
+      counterValue: this.countInCart,
     };
   },
   methods: {

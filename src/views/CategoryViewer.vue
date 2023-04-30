@@ -11,6 +11,7 @@
         :price="item.price"
         :categoryNameEng="item.categoryNameEng"
         :isBought="item.isBought"
+        :countInCart="item.countInCart"
         @addgoodtocart="addGoodToCart"
         @removegoodfromcart="removeGoodFromCart"
         @incrementgood="incrementGood"
@@ -31,6 +32,7 @@ function getGoodsByCategory(index) {
   });
   filteredGoods.forEach((good) => {
     good.isBought = boughtGoodsStorage.isBought(good.id);
+    good.countInCart = boughtGoodsStorage.cartContent[good.id] || 1;
   });
 
   return filteredGoods;
@@ -73,6 +75,9 @@ export default {
     },
     incrementGood(payload) {
       this.$emit("incrementgood", payload);
+    },
+    countInCart(id) {
+      return boughtGoodsStorage.cartContent[id] || 0;
     },
   },
 };
