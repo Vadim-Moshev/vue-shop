@@ -16,6 +16,7 @@
       @addgoodtocart="$emit('addgoodtocart', { id, price })"
       @removegoodfromcart="$emit('removegoodfromcart', { id, price })"
       @incrementgood="$emit('incrementgood', { id, price })"
+      @decrementgood="$emit('decrementgood', { id, price })"
     />
   </div>
 </template>
@@ -27,7 +28,12 @@ import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
   name: "GoodItem",
-  emits: ["addgoodtocart", "removegoodfromcart", "incrementgood"],
+  emits: [
+    "addgoodtocart",
+    "removegoodfromcart",
+    "incrementgood",
+    "decrementgood",
+  ],
   components: {
     GoodControlPanel,
   },

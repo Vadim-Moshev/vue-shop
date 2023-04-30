@@ -25,7 +25,7 @@ export default {
   props: {
     countInCart: Number,
   },
-  emits: ["incrementgood"],
+  emits: ["incrementgood", "decrementgood"],
   data() {
     // console.log("А это я: ", this.countInCart);
     return {
@@ -39,6 +39,8 @@ export default {
       }
 
       this.counterValue--;
+
+      this.$emit("decrementgood");
     },
 
     increment() {

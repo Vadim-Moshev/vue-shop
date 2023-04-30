@@ -15,6 +15,7 @@
         @addgoodtocart="addGoodToCart"
         @removegoodfromcart="removeGoodFromCart"
         @incrementgood="incrementGood"
+        @decrementgood="decrementGood"
       />
     </div>
   </div>
@@ -40,7 +41,12 @@ function getGoodsByCategory(index) {
 
 export default {
   name: "CategoryViewer",
-  emits: ["addgoodtocart", "removegoodfromcart", "incrementgood"],
+  emits: [
+    "addgoodtocart",
+    "removegoodfromcart",
+    "incrementgood",
+    "decrementgood",
+  ],
   components: {
     GoodItem,
   },
@@ -75,6 +81,9 @@ export default {
     },
     incrementGood(payload) {
       this.$emit("incrementgood", payload);
+    },
+    decrementGood(payload) {
+      this.$emit("decrementgood", payload);
     },
     countInCart(id) {
       return boughtGoodsStorage.cartContent[id] || 0;

@@ -12,6 +12,7 @@
         @addgoodtocart="addGoodToCart"
         @removegoodfromcart="removeGoodFromCart"
         @incrementgood="incrementGood"
+        @decrementgood="decrementGood"
       />
     </div>
   </main>
@@ -62,6 +63,12 @@ export default {
     },
     incrementGood({ id, price }) {
       boughtGoodsStorage.incrementGood(id, price);
+
+      this.cartSize = boughtGoodsStorage.cartSize;
+      this.totalPrice = boughtGoodsStorage.totalPrice;
+    },
+    decrementGood({ id, price }) {
+      boughtGoodsStorage.decrementGood(id, price);
 
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;
