@@ -8,7 +8,7 @@
         value="Убрать из корзины"
         @click="$emit('removegoodfromcart')"
       />
-      <GoodCounter />
+      <GoodCounter @incrementgood="$emit('incrementgood')" />
     </template>
     <input
       v-else
@@ -25,7 +25,7 @@ import GoodCounter from "@/components/GoodCounter";
 
 export default {
   name: "GoodControlPanel",
-  emits: ["addgoodtocart", "removegoodfromcart"],
+  emits: ["addgoodtocart", "removegoodfromcart", "incrementgood"],
   props: {
     isBought: Boolean,
   },

@@ -22,6 +22,7 @@ const MAX_VAL = 999;
 
 export default {
   name: "GoodCounter",
+  emits: ["incrementgood"],
   data() {
     return {
       counterValue: MIN_VAL,
@@ -42,6 +43,8 @@ export default {
       }
 
       this.counterValue++;
+
+      this.$emit("incrementgood");
     },
   },
 };

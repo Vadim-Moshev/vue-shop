@@ -11,6 +11,7 @@
       <router-view
         @addgoodtocart="addGoodToCart"
         @removegoodfromcart="removeGoodFromCart"
+        @incrementgood="incrementGood"
       />
     </div>
   </main>
@@ -55,6 +56,12 @@ export default {
     },
     removeGoodFromCart({ id, price }) {
       boughtGoodsStorage.removeGoodFromCart(id, price);
+
+      this.cartSize = boughtGoodsStorage.cartSize;
+      this.totalPrice = boughtGoodsStorage.totalPrice;
+    },
+    incrementGood({ id, price }) {
+      boughtGoodsStorage.incrementGood(id, price);
 
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;
