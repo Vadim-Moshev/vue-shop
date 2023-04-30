@@ -85,9 +85,6 @@ export default {
     decrementGood(payload) {
       this.$emit("decrementgood", payload);
     },
-    countInCart(id) {
-      return boughtGoodsStorage.cartContent[id] || 0;
-    },
   },
 };
 </script>
