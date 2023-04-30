@@ -78,6 +78,28 @@ class BoughtGoodsStorage {
   isBought(id) {
     return Object.keys(this.#cartContent).includes(id);
   }
+
+  incrementGood(id, price) {
+    this.#totalPrice += price;
+    this.#cartSize++;
+
+    addToStorage({
+      cartContent: this.#cartContent,
+      totalPrice: this.#totalPrice,
+      cartSize: this.#cartSize,
+    });
+  }
+
+  decrementGood(id, price) {
+    this.#totalPrice -= price;
+    this.#cartSize--;
+
+    addToStorage({
+      cartContent: this.#cartContent,
+      totalPrice: this.#totalPrice,
+      cartSize: this.#cartSize,
+    });
+  }
 }
 
 export default new BoughtGoodsStorage();
