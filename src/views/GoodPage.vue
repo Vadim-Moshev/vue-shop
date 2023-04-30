@@ -13,6 +13,7 @@
         @addgoodtocart="addGoodToCart"
         @removegoodfromcart="removeGoodFromCart"
         @incrementgood="incrementGood"
+        @decrementgood="decrementGood"
       />
     </div>
   </div>
@@ -27,7 +28,12 @@ import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
   name: "GoodPage",
-  emits: ["addgoodtocart", "removegoodfromcart", "incrementgood"],
+  emits: [
+    "addgoodtocart",
+    "removegoodfromcart",
+    "incrementgood",
+    "decrementgood",
+  ],
   components: {
     GoodControlPanel,
   },
@@ -62,6 +68,12 @@ export default {
     },
     incrementGood() {
       this.$emit("incrementgood", {
+        id: this.good.id,
+        price: this.good.price,
+      });
+    },
+    decrementGood() {
+      this.$emit("decrementgood", {
         id: this.good.id,
         price: this.good.price,
       });

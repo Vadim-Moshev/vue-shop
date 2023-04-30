@@ -94,6 +94,7 @@ class BoughtGoodsStorage {
   decrementGood(id, price) {
     this.#totalPrice -= price;
     this.#cartSize--;
+    this.#cartContent[id]--;
 
     addToStorage({
       cartContent: this.#cartContent,
