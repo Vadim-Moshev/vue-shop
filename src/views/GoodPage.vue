@@ -9,8 +9,10 @@
       <p class="good-price">{{ priceString }}</p>
       <GoodControlPanel
         :isBought="good.isBought"
+        :countInCart="good.countInCart"
         @addgoodtocart="addGoodToCart"
         @removegoodfromcart="removeGoodFromCart"
+        @incrementgood="incrementGood"
       />
     </div>
   </div>
@@ -25,7 +27,7 @@ import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
   name: "GoodPage",
-  emits: ["addgoodtocart", "removegoodfromcart"],
+  emits: ["addgoodtocart", "removegoodfromcart", "incrementgood"],
   components: {
     GoodControlPanel,
   },
@@ -39,6 +41,7 @@ export default {
       return item.id === this.$route.params.id;
     });
     this.good.isBought = boughtGoodsStorage.isBought(this.good.id);
+    this.good.countInCart = boughtGoodsStorage.cartContent[this.good.id] || 1;
   },
   methods: {
     addGoodToCart() {
@@ -56,6 +59,12 @@ export default {
       });
 
       this.good.isBought = false;
+    },
+    incrementGood() {
+      this.$emit("incrementgood", {
+        id: this.good.id,
+        price: this.good.price,
+      });
     },
   },
   computed: {
