@@ -13,7 +13,6 @@
     <GoodControlPanel
       :isBought="isBought"
       :countInCart="countInCart"
-      @addgoodtocart="$emit('addgoodtocart', { id, price })"
       @changecartcontent="changeCartContent"
       @incrementgood="$emit('incrementgood', { id, price })"
       @decrementgood="$emit('decrementgood', { id, price })"
