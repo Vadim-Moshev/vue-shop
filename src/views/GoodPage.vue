@@ -27,12 +27,7 @@ import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
   name: "GoodPage",
-  emits: [
-    "addgoodtocart",
-    "changecartcontent",
-    "incrementgood",
-    "decrementgood",
-  ],
+  emits: ["changecartcontent", "incrementgood", "decrementgood"],
   components: {
     GoodControlPanel,
   },
