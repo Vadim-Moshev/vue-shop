@@ -12,7 +12,6 @@
         :categoryNameEng="item.categoryNameEng"
         :isBought="item.isBought"
         :countInCart="item.countInCart"
-        @addgoodtocart="addGoodToCart"
         @changecartcontent="changeCartContent"
         @incrementgood="incrementGood"
         @decrementgood="decrementGood"
@@ -65,13 +64,6 @@ export default {
     next();
   },
   methods: {
-    addGoodToCart(payload) {
-      this.$emit("addgoodtocart", payload);
-
-      const { id } = payload;
-      const targetGoodIndex = this.goods.findIndex((good) => good.id === id);
-      this.goods[targetGoodIndex].isBought = true;
-    },
     changeCartContent(payload) {
       this.$emit("changecartcontent", payload);
 
