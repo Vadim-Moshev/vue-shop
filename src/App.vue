@@ -9,7 +9,6 @@
     <SideMenu />
     <div class="router-view-container">
       <router-view
-        @addgoodtocart="addGoodToCart"
         @changecartcontent="changeCartContent"
         @incrementgood="incrementGood"
         @decrementgood="decrementGood"
@@ -49,14 +48,7 @@ export default {
     },
   },
   methods: {
-    addGoodToCart({ id, price }) {
-      boughtGoodsStorage.addGoodToCart(id, price);
-
-      this.cartSize = boughtGoodsStorage.cartSize;
-      this.totalPrice = boughtGoodsStorage.totalPrice;
-    },
     changeCartContent({ id, price, count, flag }) {
-      // boughtGoodsStorage.removeGoodFromCart(id, price);
       boughtGoodsStorage.changeCartContent(id, price, count, flag);
 
       this.cartSize = boughtGoodsStorage.cartSize;
