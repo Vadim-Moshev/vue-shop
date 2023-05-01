@@ -10,7 +10,6 @@
       <GoodControlPanel
         :isBought="good.isBought"
         :countInCart="good.countInCart"
-        @addgoodtocart="addGoodToCart"
         @changecartcontent="changeCartContent"
         @incrementgood="incrementGood"
         @decrementgood="decrementGood"
@@ -50,14 +49,6 @@ export default {
     this.good.countInCart = boughtGoodsStorage.cartContent[this.good.id] || 1;
   },
   methods: {
-    addGoodToCart() {
-      this.$emit("addgoodtocart", {
-        id: this.good.id,
-        price: this.good.price,
-      });
-
-      this.good.isBought = true;
-    },
     changeCartContent(payload) {
       const { flag } = payload;
       const { id, price, countInCart: count } = this.good;

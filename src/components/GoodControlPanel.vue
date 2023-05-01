@@ -19,7 +19,7 @@
       class="good-control-panel__button"
       type="button"
       value="В ворзину"
-      @click="$emit('addgoodtocart')"
+      @click="$emit('changecartcontent', { flag: true })"
     />
   </div>
 </template>
