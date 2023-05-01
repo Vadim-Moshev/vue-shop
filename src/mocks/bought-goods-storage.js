@@ -47,7 +47,7 @@ class BoughtGoodsStorage {
 
     const cart = this.#cartContent;
     if (flag) {
-      if (typeof cart[id] === undefined) {
+      if (cart[id] === undefined) {
         cart[id] = count;
       } else {
         cart[id] += count;
