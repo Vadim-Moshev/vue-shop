@@ -29,12 +29,7 @@ import GoodCounter from "@/components/GoodCounter";
 
 export default {
   name: "GoodControlPanel",
-  emits: [
-    "addgoodtocart",
-    "changecartcontent",
-    "incrementgood",
-    "decrementgood",
-  ],
+  emits: ["changecartcontent", "incrementgood", "decrementgood"],
   props: {
     isBought: Boolean,
     countInCart: Number,
