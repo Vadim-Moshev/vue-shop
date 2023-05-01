@@ -13,7 +13,7 @@
         :isBought="item.isBought"
         :countInCart="item.countInCart"
         @addgoodtocart="addGoodToCart"
-        @removegoodfromcart="removeGoodFromCart"
+        @changecartcontent="changeCartContent"
         @incrementgood="incrementGood"
         @decrementgood="decrementGood"
       />
@@ -43,7 +43,7 @@ export default {
   name: "CategoryViewer",
   emits: [
     "addgoodtocart",
-    "removegoodfromcart",
+    "changecartcontent",
     "incrementgood",
     "decrementgood",
   ],
@@ -72,8 +72,8 @@ export default {
       const targetGoodIndex = this.goods.findIndex((good) => good.id === id);
       this.goods[targetGoodIndex].isBought = true;
     },
-    removeGoodFromCart(payload) {
-      this.$emit("removegoodfromcart", payload);
+    changeCartContent(payload) {
+      this.$emit("changecartcontent", payload);
 
       const { id, flag } = payload;
       const targetGoodIndex = this.goods.findIndex((good) => good.id === id);

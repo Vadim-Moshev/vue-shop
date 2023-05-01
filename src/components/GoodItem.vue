@@ -14,8 +14,8 @@
       :isBought="isBought"
       :countInCart="countInCart"
       @addgoodtocart="$emit('addgoodtocart', { id, price })"
-      @removegoodfromcart="
-        $emit('removegoodfromcart', {
+      @changecartcontent="
+        $emit('changecartcontent', {
           id,
           price,
           count: countInCart,
@@ -37,7 +37,7 @@ export default {
   name: "GoodItem",
   emits: [
     "addgoodtocart",
-    "removegoodfromcart",
+    "changecartcontent",
     "incrementgood",
     "decrementgood",
   ],

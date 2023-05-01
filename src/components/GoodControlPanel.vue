@@ -6,7 +6,7 @@
         class="good-control-panel__button"
         type="button"
         value="Убрать из корзины"
-        @click="$emit('removegoodfromcart')"
+        @click="$emit('changecartcontent')"
       />
       <GoodCounter
         :countInCart="countInCart"
@@ -31,7 +31,7 @@ export default {
   name: "GoodControlPanel",
   emits: [
     "addgoodtocart",
-    "removegoodfromcart",
+    "changecartcontent",
     "incrementgood",
     "decrementgood",
   ],
