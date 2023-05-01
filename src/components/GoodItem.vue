@@ -14,7 +14,14 @@
       :isBought="isBought"
       :countInCart="countInCart"
       @addgoodtocart="$emit('addgoodtocart', { id, price })"
-      @removegoodfromcart="$emit('removegoodfromcart', { id, price })"
+      @removegoodfromcart="
+        $emit('removegoodfromcart', {
+          id,
+          price,
+          count: countInCart,
+          flag: false,
+        })
+      "
       @incrementgood="$emit('incrementgood', { id, price })"
       @decrementgood="$emit('decrementgood', { id, price })"
     />

@@ -55,8 +55,9 @@ export default {
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;
     },
-    removeGoodFromCart({ id, price }) {
-      boughtGoodsStorage.removeGoodFromCart(id, price);
+    removeGoodFromCart({ id, price, count, flag }) {
+      // boughtGoodsStorage.removeGoodFromCart(id, price);
+      boughtGoodsStorage.changeCartContent(id, price, count, flag);
 
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;

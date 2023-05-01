@@ -75,9 +75,9 @@ export default {
     removeGoodFromCart(payload) {
       this.$emit("removegoodfromcart", payload);
 
-      const { id } = payload;
+      const { id, flag } = payload;
       const targetGoodIndex = this.goods.findIndex((good) => good.id === id);
-      this.goods[targetGoodIndex].isBought = false;
+      this.goods[targetGoodIndex].isBought = flag;
     },
     incrementGood(payload) {
       this.$emit("incrementgood", payload);
