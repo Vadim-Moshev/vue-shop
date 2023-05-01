@@ -14,14 +14,7 @@
       :isBought="isBought"
       :countInCart="countInCart"
       @addgoodtocart="$emit('addgoodtocart', { id, price })"
-      @changecartcontent="
-        $emit('changecartcontent', {
-          id,
-          price,
-          count: countInCart,
-          flag: false,
-        })
-      "
+      @changecartcontent="changeCartContent"
       @incrementgood="$emit('incrementgood', { id, price })"
       @decrementgood="$emit('decrementgood', { id, price })"
     />
@@ -53,6 +46,17 @@ export default {
     photo: String,
     isBought: Boolean,
     countInCart: Number,
+  },
+  methods: {
+    changeCartContent(payload) {
+      const { flag } = payload;
+      this.$emit("changecartcontent", {
+        id: this.id,
+        price: this.price,
+        count: this.countInCart,
+        flag,
+      });
+    },
   },
   computed: {
     priceString() {
