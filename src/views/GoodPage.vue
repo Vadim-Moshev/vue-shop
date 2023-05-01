@@ -11,7 +11,7 @@
         :isBought="good.isBought"
         :countInCart="good.countInCart"
         @addgoodtocart="addGoodToCart"
-        @removegoodfromcart="removeGoodFromCart"
+        @changecartcontent="changeCartContent"
         @incrementgood="incrementGood"
         @decrementgood="decrementGood"
       />
@@ -30,7 +30,7 @@ export default {
   name: "GoodPage",
   emits: [
     "addgoodtocart",
-    "removegoodfromcart",
+    "changecartcontent",
     "incrementgood",
     "decrementgood",
   ],
@@ -58,13 +58,13 @@ export default {
 
       this.good.isBought = true;
     },
-    removeGoodFromCart() {
-      this.$emit("removegoodfromcart", {
-        id: this.good.id,
-        price: this.good.price,
-      });
+    changeCartContent(payload) {
+      const { flag } = payload;
+      const { id, price, countInCart: count } = this.good;
+      console.log(id, price, count, flag);
+      this.$emit("changecartcontent", { id, price, count, flag });
 
-      this.good.isBought = false;
+      this.good.isBought = flag;
     },
     incrementGood() {
       this.$emit("incrementgood", {

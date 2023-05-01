@@ -6,7 +6,7 @@
         class="good-control-panel__button"
         type="button"
         value="Убрать из корзины"
-        @click="$emit('changecartcontent')"
+        @click="$emit('changecartcontent', { flag: false })"
       />
       <GoodCounter
         :countInCart="countInCart"
