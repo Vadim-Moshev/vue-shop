@@ -61,7 +61,6 @@ export default {
     changeCartContent(payload) {
       const { flag } = payload;
       const { id, price, countInCart: count } = this.good;
-      console.log(id, price, count, flag);
       this.$emit("changecartcontent", { id, price, count, flag });
 
       this.good.isBought = flag;
