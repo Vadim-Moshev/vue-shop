@@ -40,12 +40,7 @@ function getGoodsByCategory(index) {
 
 export default {
   name: "CategoryViewer",
-  emits: [
-    "addgoodtocart",
-    "changecartcontent",
-    "incrementgood",
-    "decrementgood",
-  ],
+  emits: ["changecartcontent", "incrementgood", "decrementgood"],
   components: {
     GoodItem,
   },
