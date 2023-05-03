@@ -1,3 +1,5 @@
+import goods from "@/mocks/goods.js";
+
 function addToStorage(obj) {
   localStorage.setItem("shopCart", JSON.stringify(obj));
 }
@@ -58,6 +60,33 @@ class BoughtGoodsStorage {
       } else {
         delete cart[id];
       }
+    }
+
+    addToStorage({
+      cartContent: cart,
+      totalPrice: this.#totalPrice,
+      cartSize: this.#cartSize,
+    });
+  }
+
+  changeGoodAvailability(id, additionFlag) {
+    const sign = additionFlag ? 1 : -1;
+
+    const good = good.find((good) => good.id === id);
+    const { price } = good;
+
+    const cart = this.#cartContent;
+    if (additionFlag) {
+      this.#totalPrice += price;
+      this.#cartSize++;
+      cart[id] = 1;
+    } else {
+      const count = this.#cartContent[id];
+      const priceToSubtract = price * count;
+
+      this.#totalPrice -= priceToSubtract;
+      this.#cartSize -= count;
+      delete cart[id];
     }
 
     addToStorage({
