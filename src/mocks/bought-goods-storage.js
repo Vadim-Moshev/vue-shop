@@ -70,9 +70,7 @@ class BoughtGoodsStorage {
   }
 
   changeGoodAvailability(id, additionFlag) {
-    const sign = additionFlag ? 1 : -1;
-
-    const good = good.find((good) => good.id === id);
+    const good = goods.find((good) => good.id === id);
     const { price } = good;
 
     const cart = this.#cartContent;

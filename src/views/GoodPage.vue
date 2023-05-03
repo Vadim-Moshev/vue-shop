@@ -10,7 +10,7 @@
       <GoodControlPanel
         :isBought="good.isBought"
         :countInCart="good.countInCart"
-        @changecartcontent="changeCartContent"
+        @changeGoodAvailability="changeGoodAvailability"
       />
     </div>
   </div>
@@ -25,7 +25,7 @@ import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
   name: "GoodPage",
-  emits: ["changecartcontent"],
+  emits: ["changeGoodAvailability"],
   components: {
     GoodControlPanel,
   },
@@ -42,18 +42,11 @@ export default {
     this.good.countInCart = boughtGoodsStorage.cartContent[this.good.id] || 1;
   },
   methods: {
-    changeCartContent(payload) {
-      const { flag, changeCount } = payload;
-      const { id, price } = this.good;
-      const count = changeCount ? 1 : this.good.countInCart;
+    changeGoodAvailability({ flag }) {
+      const { id } = this.good;
+      this.good.isBought = flag;
 
-      const dataEvent = { id, price, count, flag };
-      this.$emit("changecartcontent", dataEvent);
-      this.good.countInCart = boughtGoodsStorage.cartContent[id] || 1;
-
-      if (!changeCount) {
-        this.good.isBought = flag;
-      }
+      this.$emit("changeGoodAvailability", { id, flag });
     },
   },
   computed: {

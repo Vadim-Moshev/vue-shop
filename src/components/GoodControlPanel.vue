@@ -6,7 +6,7 @@
         class="good-control-panel__button"
         type="button"
         value="Убрать из корзины"
-        @click="$emit('changecartcontent', { flag: false })"
+        @click="$emit('changeGoodAvailability', { flag: false })"
       />
       <GoodCounter
         :countInCart="countInCart"
@@ -18,7 +18,7 @@
       class="good-control-panel__button"
       type="button"
       value="В ворзину"
-      @click="$emit('changecartcontent', { flag: true })"
+      @click="$emit('changeGoodAvailability', { flag: true })"
     />
   </div>
 </template>
@@ -28,7 +28,7 @@ import GoodCounter from "@/components/GoodCounter";
 
 export default {
   name: "GoodControlPanel",
-  emits: ["changecartcontent"],
+  emits: ["changeGoodAvailability"],
   props: {
     isBought: Boolean,
     countInCart: Number,

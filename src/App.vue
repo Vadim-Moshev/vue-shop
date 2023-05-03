@@ -8,7 +8,7 @@
   <main class="main">
     <SideMenu />
     <div class="router-view-container">
-      <router-view @changecartcontent="changeCartContent" />
+      <router-view @changeGoodAvailability="changeGoodAvailability" />
     </div>
   </main>
   <footer class="footer"></footer>
@@ -44,8 +44,8 @@ export default {
     },
   },
   methods: {
-    changeCartContent({ id, price, count, flag }) {
-      boughtGoodsStorage.changeCartContent(id, price, count, flag);
+    changeGoodAvailability({ id, flag }) {
+      boughtGoodsStorage.changeGoodAvailability(id, flag);
 
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;
