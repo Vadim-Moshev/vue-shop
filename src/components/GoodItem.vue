@@ -20,7 +20,7 @@
 
 <script>
 import formatNumber from "@/helpers/format-number.js";
-
+import boughtGoodsStorage from "@/mocks/bought-goods-storage.js";
 import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
@@ -28,6 +28,11 @@ export default {
   emits: ["changecartcontent"],
   components: {
     GoodControlPanel,
+  },
+  data() {
+    return {
+      countInCartData: 0,
+    };
   },
   props: {
     id: String,
@@ -39,6 +44,9 @@ export default {
     isBought: Boolean,
     countInCart: Number,
   },
+  created() {
+    this.countInCartData = this.countInCart;
+  },
   methods: {
     changeCartContent(payload) {
       const { flag, changeCount } = payload;
@@ -46,10 +54,12 @@ export default {
       this.$emit("changecartcontent", {
         id: this.id,
         price: this.price,
-        count: changeCount ? 1 : this.countInCart,
+        count: changeCount ? 1 : this.countInCartData,
         flag,
         changeCount,
       });
+
+      this.countInCartData = boughtGoodsStorage.cartContent[this.id] || 1;
     },
   },
   computed: {
