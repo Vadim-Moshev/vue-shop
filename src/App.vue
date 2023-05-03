@@ -53,9 +53,6 @@ export default {
 
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;
-
-      // console.clear();
-      console.log(boughtGoodsStorage.cartContent);
     },
     incrementGood({ id, price }) {
       boughtGoodsStorage.incrementGood(id, price);
