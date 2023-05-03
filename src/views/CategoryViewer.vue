@@ -64,8 +64,8 @@ export default {
       const targetGoodIndex = this.goods.findIndex((good) => good.id === id);
       this.goods[targetGoodIndex].isBought = flag;
     },
-    changeGoodCount() {
-      this.$emit("changeGoodCount", { id, flag });
+    changeGoodCount(payload) {
+      this.$emit("changeGoodCount", payload);
     },
   },
 };

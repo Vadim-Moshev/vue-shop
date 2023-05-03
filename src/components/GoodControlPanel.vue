@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     changeGoodCount(payload) {
-      $emit("changeGoodCount", payload);
+      this.$emit("changeGoodCount", payload);
     },
   },
 };
