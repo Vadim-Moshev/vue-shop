@@ -41,34 +41,6 @@ class BoughtGoodsStorage {
     return this.#totalPrice;
   }
 
-  changeCartContent(id, price, count, flag) {
-    const sign = flag ? 1 : -1;
-
-    this.#totalPrice += sign * count * price;
-    this.#cartSize += sign * count;
-
-    const cart = this.#cartContent;
-    if (flag) {
-      if (cart[id] === undefined) {
-        cart[id] = count;
-      } else {
-        cart[id] += count;
-      }
-    } else {
-      if (cart[id] > count) {
-        cart[id] -= count;
-      } else {
-        delete cart[id];
-      }
-    }
-
-    addToStorage({
-      cartContent: cart,
-      totalPrice: this.#totalPrice,
-      cartSize: this.#cartSize,
-    });
-  }
-
   changeGoodAvailability(id, additionFlag) {
     const good = goods.find((good) => good.id === id);
     const { price } = good;
