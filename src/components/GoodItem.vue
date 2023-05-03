@@ -14,8 +14,6 @@
       :isBought="isBought"
       :countInCart="countInCart"
       @changecartcontent="changeCartContent"
-      @incrementgood="$emit('incrementgood', { id, price })"
-      @decrementgood="$emit('decrementgood', { id, price })"
     />
   </div>
 </template>
@@ -27,7 +25,7 @@ import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
   name: "GoodItem",
-  emits: ["changecartcontent", "incrementgood", "decrementgood"],
+  emits: ["changecartcontent"],
   components: {
     GoodControlPanel,
   },
@@ -43,12 +41,14 @@ export default {
   },
   methods: {
     changeCartContent(payload) {
-      const { flag } = payload;
+      const { flag, changeCount } = payload;
+
       this.$emit("changecartcontent", {
         id: this.id,
         price: this.price,
-        count: this.countInCart,
+        count: changeCount ? 1 : this.countInCart,
         flag,
+        changeCount,
       });
     },
   },

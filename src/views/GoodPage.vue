@@ -49,6 +49,8 @@ export default {
 
       const dataEvent = { id, price, count, flag };
       this.$emit("changecartcontent", dataEvent);
+      this.good.countInCart = boughtGoodsStorage.cartContent[id] || 1;
+      console.log(`Новое количество ${this.good.countInCart}`);
 
       if (!changeCount) {
         this.good.isBought = flag;

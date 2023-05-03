@@ -13,8 +13,6 @@
         :isBought="item.isBought"
         :countInCart="item.countInCart"
         @changecartcontent="changeCartContent"
-        @incrementgood="incrementGood"
-        @decrementgood="decrementGood"
       />
     </div>
   </div>
@@ -40,7 +38,7 @@ function getGoodsByCategory(index) {
 
 export default {
   name: "CategoryViewer",
-  emits: ["changecartcontent", "incrementgood", "decrementgood"],
+  emits: ["changecartcontent"],
   components: {
     GoodItem,
   },
@@ -62,7 +60,11 @@ export default {
     changeCartContent(payload) {
       this.$emit("changecartcontent", payload);
 
-      const { id, flag } = payload;
+      const { id, flag, changeCount } = payload;
+      if (changeCount) {
+        return;
+      }
+
       const targetGoodIndex = this.goods.findIndex((good) => good.id === id);
       this.goods[targetGoodIndex].isBought = flag;
     },

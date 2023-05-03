@@ -46,6 +46,7 @@ class BoughtGoodsStorage {
     this.#cartSize += sign * count;
 
     const cart = this.#cartContent;
+    console.log("флажок = ", flag);
     if (flag) {
       if (cart[id] === undefined) {
         cart[id] = count;
@@ -54,6 +55,8 @@ class BoughtGoodsStorage {
       }
     } else {
       if (cart[id] > count) {
+        console.log("cart[id] = ", cart[id], "count = ", count);
+
         cart[id] -= count;
       } else {
         delete cart[id];
