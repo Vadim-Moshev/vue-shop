@@ -25,7 +25,7 @@ export default {
   props: {
     countInCart: Number,
   },
-  emits: ["changecartcontent"],
+  emits: ["changeGoodCount"],
   data() {
     return {
       counterValue: this.countInCart,
@@ -39,8 +39,7 @@ export default {
 
       this.counterValue--;
 
-      const payload = { flag: false, changeCount: true };
-      this.$emit("changecartcontent", payload);
+      this.$emit("changeGoodCount", { flag: false });
     },
 
     increment() {
@@ -50,8 +49,7 @@ export default {
 
       this.counterValue++;
 
-      const payload = { flag: true, changeCount: true };
-      this.$emit("changecartcontent", payload);
+      this.$emit("changeGoodCount", { flag: true });
     },
   },
 };

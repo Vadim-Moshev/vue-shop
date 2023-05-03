@@ -50,6 +50,12 @@ export default {
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;
     },
+    changeGoodCount({ id, flag }) {
+      boughtGoodsStorage.changeGoodCount(id, flag);
+
+      this.cartSize = boughtGoodsStorage.cartSize;
+      this.totalPrice = boughtGoodsStorage.totalPrice;
+    },
   },
 };
 </script>

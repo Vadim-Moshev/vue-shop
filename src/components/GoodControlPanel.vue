@@ -10,7 +10,7 @@
       />
       <GoodCounter
         :countInCart="countInCart"
-        @changecartcontent="changeCartContent"
+        @changeGoodCount="changeGoodCount"
       />
     </template>
     <input
@@ -28,7 +28,7 @@ import GoodCounter from "@/components/GoodCounter";
 
 export default {
   name: "GoodControlPanel",
-  emits: ["changeGoodAvailability"],
+  emits: ["changeGoodAvailability", "changeGoodCount"],
   props: {
     isBought: Boolean,
     countInCart: Number,
@@ -37,8 +37,8 @@ export default {
     GoodCounter,
   },
   methods: {
-    changeCartContent(payload) {
-      this.$emit("changecartcontent", payload);
+    changeGoodCount(payload) {
+      $emit("changeGoodCount", payload);
     },
   },
 };

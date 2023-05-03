@@ -94,6 +94,22 @@ class BoughtGoodsStorage {
     });
   }
 
+  changeGoodCount(id, additionFlag) {
+    const good = goods.find((good) => good.id === id);
+    const { price } = good;
+    const sign = additionFlag ? 1 : -1;
+
+    this.#totalPrice += sign * price;
+    this.#cartSize += sign;
+    this.#cartContent[id] += sign;
+
+    addToStorage({
+      cartContent: this.#cartContent,
+      totalPrice: this.#totalPrice,
+      cartSize: this.#cartSize,
+    });
+  }
+
   isBought(id) {
     return Object.keys(this.#cartContent).includes(id);
   }

@@ -13,6 +13,7 @@
         :isBought="item.isBought"
         :countInCart="item.countInCart"
         @changeGoodAvailability="changeGoodAvailability"
+        @changeGoodCount="changeGoodCount"
       />
     </div>
   </div>
@@ -38,7 +39,7 @@ function getGoodsByCategory(index) {
 
 export default {
   name: "CategoryViewer",
-  emits: ["changeGoodAvailability"],
+  emits: ["changeGoodAvailability", "changeGoodCount"],
   components: {
     GoodItem,
   },
@@ -62,6 +63,9 @@ export default {
 
       const targetGoodIndex = this.goods.findIndex((good) => good.id === id);
       this.goods[targetGoodIndex].isBought = flag;
+    },
+    changeGoodCount() {
+      this.$emit("changeGoodCount", { id, flag });
     },
   },
 };

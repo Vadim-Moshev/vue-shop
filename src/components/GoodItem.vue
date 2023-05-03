@@ -14,6 +14,7 @@
       :isBought="isBought"
       :countInCart="countInCart"
       @changeGoodAvailability="changeGoodAvailability"
+      @changeGoodCount="changeGoodCount"
     />
   </div>
 </template>
@@ -50,6 +51,11 @@ export default {
   methods: {
     changeGoodAvailability({ flag }) {
       this.$emit("changeGoodAvailability", { id: this.id, flag });
+
+      this.countInCartData = boughtGoodsStorage.cartContent[this.id] || 1;
+    },
+    changeGoodCount({ flag }) {
+      this.$emit("changeGoodCount", { id: this.id, flag });
 
       this.countInCartData = boughtGoodsStorage.cartContent[this.id] || 1;
     },
