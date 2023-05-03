@@ -21,7 +21,6 @@
 
 <script>
 import formatNumber from "@/helpers/format-number.js";
-import boughtGoodsStorage from "@/mocks/bought-goods-storage.js";
 import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
@@ -45,19 +44,12 @@ export default {
     isBought: Boolean,
     countInCart: Number,
   },
-  created() {
-    this.countInCartData = this.countInCart;
-  },
   methods: {
     changeGoodAvailability({ flag }) {
       this.$emit("changeGoodAvailability", { id: this.id, flag });
-
-      this.countInCartData = boughtGoodsStorage.cartContent[this.id] || 1;
     },
     changeGoodCount({ flag }) {
       this.$emit("changeGoodCount", { id: this.id, flag });
-
-      this.countInCartData = boughtGoodsStorage.cartContent[this.id] || 1;
     },
   },
   computed: {
