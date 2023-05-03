@@ -8,7 +8,10 @@
   <main class="main">
     <SideMenu />
     <div class="router-view-container">
-      <router-view @changeGoodAvailability="changeGoodAvailability" />
+      <router-view
+        @changeGoodAvailability="changeGoodAvailability"
+        @changeGoodCount="changeGoodCount"
+      />
     </div>
   </main>
   <footer class="footer"></footer>
@@ -52,6 +55,7 @@ export default {
     },
     changeGoodCount({ id, flag }) {
       boughtGoodsStorage.changeGoodCount(id, flag);
+      console.log("вот тебье: ", boughtGoodsStorage.cartContent);
 
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;
