@@ -23,6 +23,7 @@
 
 <script>
 import boughtGoodsStorage from "@/mocks/bought-goods-storage";
+import formatNumber from "@/helpers/format-number";
 
 import SideMenu from "@/components/SideMenu";
 import ShopCartLink from "@/components/ShopCartLink";
@@ -45,9 +46,11 @@ export default {
   },
   computed: {
     shopCartCaption() {
+      const formattedPrice = formatNumber(this.totalPrice);
+
       return this.totalPrice === 0
         ? `Корзина (нет товаров)`
-        : `Корзина (Товаров ${this.cartSize} | ${this.totalPrice} Руб.)`;
+        : `Корзина (Товаров ${this.cartSize} | ${formattedPrice} Руб.)`;
     },
   },
   methods: {
