@@ -67,68 +67,8 @@ class BoughtGoodsStorage {
     });
   }
 
-  addGoodToCart(id, price) {
-    this.#totalPrice += price;
-    this.#cartSize++;
-
-    const cart = this.#cartContent;
-    if (typeof cart[id] !== "number") {
-      cart[id] = 1;
-    } else {
-      cart[id]++;
-    }
-
-    addToStorage({
-      cartContent: cart,
-      totalPrice: this.#totalPrice,
-      cartSize: this.#cartSize,
-    });
-  }
-
-  removeGoodFromCart(id, price) {
-    this.#totalPrice -= price;
-    this.#cartSize--;
-
-    const cart = this.#cartContent;
-    if (cart[id] > 1) {
-      cart[id]--;
-    } else {
-      delete cart[id];
-    }
-
-    addToStorage({
-      cartContent: cart,
-      totalPrice: this.#totalPrice,
-      cartSize: this.#cartSize,
-    });
-  }
-
   isBought(id) {
     return Object.keys(this.#cartContent).includes(id);
-  }
-
-  incrementGood(id, price) {
-    this.#totalPrice += price;
-    this.#cartSize++;
-    this.#cartContent[id]++;
-
-    addToStorage({
-      cartContent: this.#cartContent,
-      totalPrice: this.#totalPrice,
-      cartSize: this.#cartSize,
-    });
-  }
-
-  decrementGood(id, price) {
-    this.#totalPrice -= price;
-    this.#cartSize--;
-    this.#cartContent[id]--;
-
-    addToStorage({
-      cartContent: this.#cartContent,
-      totalPrice: this.#totalPrice,
-      cartSize: this.#cartSize,
-    });
   }
 }
 
