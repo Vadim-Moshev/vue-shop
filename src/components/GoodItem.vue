@@ -26,7 +26,7 @@ import GoodControlPanel from "@/components/GoodControlPanel";
 
 export default {
   name: "GoodItem",
-  emits: ["changeGoodAvailability"],
+  emits: ["changeGoodAvailability", "changeGoodCount"],
   components: {
     GoodControlPanel,
   },
