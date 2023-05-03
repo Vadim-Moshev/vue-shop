@@ -8,11 +8,7 @@
   <main class="main">
     <SideMenu />
     <div class="router-view-container">
-      <router-view
-        @changecartcontent="changeCartContent"
-        @incrementgood="incrementGood"
-        @decrementgood="decrementGood"
-      />
+      <router-view @changecartcontent="changeCartContent" />
     </div>
   </main>
   <footer class="footer"></footer>
@@ -50,18 +46,6 @@ export default {
   methods: {
     changeCartContent({ id, price, count, flag }) {
       boughtGoodsStorage.changeCartContent(id, price, count, flag);
-
-      this.cartSize = boughtGoodsStorage.cartSize;
-      this.totalPrice = boughtGoodsStorage.totalPrice;
-    },
-    incrementGood({ id, price }) {
-      boughtGoodsStorage.incrementGood(id, price);
-
-      this.cartSize = boughtGoodsStorage.cartSize;
-      this.totalPrice = boughtGoodsStorage.totalPrice;
-    },
-    decrementGood({ id, price }) {
-      boughtGoodsStorage.decrementGood(id, price);
 
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;
