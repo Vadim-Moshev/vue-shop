@@ -14,7 +14,11 @@
       />
     </div>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    Итоговый проект по курсу «Основы frontend-разработки и проектирования
+    web-приложений». <br />
+    Исполнитель: студент группы 899, Немцев Владислав Олегович.
+  </footer>
 </template>
 
 <script>
@@ -119,7 +123,9 @@ body {
 }
 
 .footer {
-  height: 100px;
+  padding: 15px;
   background-color: navy;
+  color: #fff;
+  text-align: left;
 }
 </style>
