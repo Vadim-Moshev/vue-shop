@@ -55,7 +55,6 @@ export default {
     },
     changeGoodCount({ id, flag }) {
       boughtGoodsStorage.changeGoodCount(id, flag);
-      console.log("вот тебье: ", boughtGoodsStorage.cartContent);
 
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;
