@@ -1,11 +1,11 @@
 <template>
   <div class="shop-cart__caption-container">
     <span class="shop-cart__header">{{ shopCartHeader }}</span>
-    <router-link v-if="cartIsNotEmpy" to="/makeorder"
+    <router-link v-if="cartIsNotEmtpy" to="/makeorder"
       >Перейти к оформлению заказа</router-link
     >
   </div>
-  <div v-if="cartIsNotEmpy" class="goods-container">
+  <div v-if="cartIsNotEmtpy" class="goods-container">
     <GoodItem
       v-for="item in boughtGoods"
       :key="item.id"
@@ -65,7 +65,7 @@ export default {
       const totalPrice = formatNumber(this.totalPrice);
       return `В вашей корзине ${cartSize} товар(а,ов) на общую сумму ${totalPrice} руб.`;
     },
-    cartIsNotEmpy() {
+    cartIsNotEmtpy() {
       return this.cartSize > 0;
     },
   },

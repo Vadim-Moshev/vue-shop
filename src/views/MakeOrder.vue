@@ -1,9 +1,9 @@
 <template>
   <div class="make-order__header-container">
-    <h1 v-if="cartIsNotEmpy">Оформление заказа</h1>
+    <h1 v-if="cartIsNotEmtpy">Оформление заказа</h1>
     <h1 v-else>оформление зказа недоступно, поскольку ваша корзина пуста</h1>
   </div>
-  <form v-if="cartIsNotEmpy" class="make-order__form" action="" novalidate>
+  <form v-if="cartIsNotEmtpy" class="make-order__form" action="" novalidate>
     <div class="make-order__form-row">
       <span class="make-order__field-caption">
         Ваше имя <i class="required"></i>
@@ -49,7 +49,7 @@ export default {
     };
   },
   computed: {
-    cartIsNotEmpy() {
+    cartIsNotEmtpy() {
       return boughtGoodsStorage.cartSize > 0;
     },
   },
