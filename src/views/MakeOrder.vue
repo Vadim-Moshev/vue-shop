@@ -30,7 +30,11 @@
       >Если все поля былы заполнены верно, то при нажатии на кнопку «Оформить
       заказ» все товары из корзины будут удалены.</span
     >
-    <button class="make-order__submit" type="button">Оформить заказ</button>
+    <button class="make-order__submit" type="button" @click="makeOrder">
+      Оформить заказ
+    </button>
+
+    <FormValidationError v-if="isError" :invalidFieldName="invalidFieldName" />
   </form>
 </template>
 
@@ -51,11 +55,49 @@ export default {
       phone: "",
       comment: "",
       isError: false,
+      invalidFieldName: "",
     };
   },
   computed: {
     cartIsNotEmtpy() {
       return boughtGoodsStorage.cartSize > 0;
+    },
+  },
+  methods: {
+    makeOrder() {
+      if (this.name === "") {
+        this.invalidFieldName = "Ваше имя";
+        this.isError = true;
+        return;
+      }
+
+      if (this.address === "") {
+        this.invalidFieldName = "Ваш адрес";
+        this.isError = true;
+        return;
+      }
+
+      if (this.phone === "") {
+        this.invalidFieldName = "Ваш телефон";
+        this.isError = true;
+        return;
+      }
+
+      alert("OK!");
+    },
+  },
+  watch: {
+    name() {
+      this.invalidFieldName = "";
+      this.isError = false;
+    },
+    addres() {
+      this.invalidFieldName = "";
+      this.isError = false;
+    },
+    phone() {
+      this.invalidFieldName = "";
+      this.isError = false;
     },
   },
 };
