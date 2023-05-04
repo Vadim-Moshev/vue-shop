@@ -37,8 +37,13 @@
 <script>
 import boughtGoodsStorage from "@/mocks/bought-goods-storage";
 
+import FormValidationError from "@/components/FormValidationError";
+
 export default {
   name: "MakeOrder",
+  components: {
+    FormValidationError,
+  },
   data() {
     return {
       name: "",
