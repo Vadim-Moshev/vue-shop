@@ -30,7 +30,7 @@
       >Если все поля былы заполнены верно, то при нажатии на кнопку «Оформить
       заказ» все товары из корзины будут удалены.</span
     >
-    <input class="make-order__submit" type="submit" />
+    <button class="make-order__submit" type="button">Оформить заказ</button>
   </form>
 </template>
 
