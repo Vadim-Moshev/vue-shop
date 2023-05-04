@@ -3,6 +3,7 @@ import MainPage from "../views/MainPage.vue";
 import CategoryViewer from "../views/CategoryViewer.vue";
 import ShopCart from "../views/ShopCart.vue";
 import GoodPage from "../views/GoodPage.vue";
+import MakeOrder from "../views/MakeOrder.vue";
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: "/goodpage/:id",
     name: "goodpage",
     component: GoodPage,
+  },
+  {
+    path: "/makeorder",
+    name: "makeorder",
+    component: MakeOrder,
   },
   {
     path: "/about",
