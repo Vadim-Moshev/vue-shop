@@ -83,7 +83,7 @@ export default {
         return;
       }
 
-      alert("OK!");
+      this.$router.push("/");
     },
   },
   watch: {
