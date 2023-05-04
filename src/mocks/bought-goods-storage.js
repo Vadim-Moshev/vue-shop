@@ -85,6 +85,18 @@ class BoughtGoodsStorage {
   isBought(id) {
     return Object.keys(this.#cartContent).includes(id);
   }
+
+  clearCartContent() {
+    this.#totalPrice = 0;
+    this.#cartSize = 0;
+    this.#cartContent = {};
+
+    addToStorage({
+      cartContent: this.#cartContent,
+      totalPrice: this.#totalPrice,
+      cartSize: this.#cartSize,
+    });
+  }
 }
 
 export default new BoughtGoodsStorage();
