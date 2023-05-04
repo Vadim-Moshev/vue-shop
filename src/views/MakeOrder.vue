@@ -27,7 +27,7 @@
       <input class="make-order__field" type="text" v-model="comment" />
     </div>
     <span class="make-order__notice"
-      >Если все поля былы заполнены верно, то при нажатии на кнопку «Оформить
+      >Если все поля были заполнены верно, то при нажатии на кнопку «Оформить
       заказ» все товары из корзины будут удалены, а вы будете перемеены на
       главную страницу.</span
     >
@@ -46,6 +46,7 @@ import FormValidationError from "@/components/FormValidationError";
 
 export default {
   name: "MakeOrder",
+  emits: ["clearCartContent"],
   components: {
     FormValidationError,
   },
@@ -84,6 +85,7 @@ export default {
         return;
       }
 
+      this.$emit("clearCartContent");
       this.$router.push("/");
     },
   },
@@ -92,7 +94,7 @@ export default {
       this.invalidFieldName = "";
       this.isError = false;
     },
-    addres() {
+    address() {
       this.invalidFieldName = "";
       this.isError = false;
     },

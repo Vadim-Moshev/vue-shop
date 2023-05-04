@@ -11,6 +11,7 @@
       <router-view
         @changeGoodAvailability="changeGoodAvailability"
         @changeGoodCount="changeGoodCount"
+        @clearCartContent="clearCartContent"
       />
     </div>
   </main>
@@ -62,6 +63,12 @@ export default {
     },
     changeGoodCount({ id, flag }) {
       boughtGoodsStorage.changeGoodCount(id, flag);
+
+      this.cartSize = boughtGoodsStorage.cartSize;
+      this.totalPrice = boughtGoodsStorage.totalPrice;
+    },
+    clearCartContent() {
+      boughtGoodsStorage.clearCartContent();
 
       this.cartSize = boughtGoodsStorage.cartSize;
       this.totalPrice = boughtGoodsStorage.totalPrice;
