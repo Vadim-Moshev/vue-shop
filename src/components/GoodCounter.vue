@@ -4,6 +4,7 @@
       class="goods-counter__button"
       type="button"
       value="-"
+      :disabled="decButtonDisabled"
       @click="decrement"
     />
     <div class="goods-counter__indicator">{{ counterValue }}</div>
@@ -11,6 +12,7 @@
       class="goods-counter__button"
       type="button"
       value="+"
+      :disabled="incButtonDisabled"
       @click="increment"
     />
   </div>
@@ -28,8 +30,24 @@ export default {
   emits: ["changeGoodCount"],
   data() {
     return {
-      counterValue: this.countInCart,
+      counterValue: 0,
+      decButtonDisabled: false,
+      incButtonDisabled: false,
     };
+  },
+  created() {
+    this.counterValue = this.countInCart;
+
+    this.decButtonDisabled = false;
+    this.incButtonDisabled = false;
+
+    if (this.counterValue === MIN_VAL) {
+      this.decButtonDisabled = true;
+    }
+
+    if (this.counterValue === MAX_VAL) {
+      this.incButtonDisabled = true;
+    }
   },
   methods: {
     decrement() {
@@ -50,6 +68,20 @@ export default {
       this.counterValue++;
 
       this.$emit("changeGoodCount", { flag: true });
+    },
+  },
+  watch: {
+    counterValue(newValue) {
+      this.decButtonDisabled = false;
+      this.incButtonDisabled = false;
+
+      if (newValue === MIN_VAL) {
+        this.decButtonDisabled = true;
+      }
+
+      if (newValue === MAX_VAL) {
+        this.incButtonDisabled = true;
+      }
     },
   },
 };
@@ -78,6 +110,11 @@ export default {
 
 .goods-counter__button:hover {
   background-color: darkorange;
+}
+
+.goods-counter__button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
 }
 
 .goods-counter__indicator {
