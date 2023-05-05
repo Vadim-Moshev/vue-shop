@@ -1,7 +1,7 @@
 <template>
   <h1 class="good-title">{{ good.title }}</h1>
   <div class="good-info">
-    <img :src="pathToPhoto" alt="" />
+    <img class="good-photo" :src="pathToPhoto" alt="" />
     <div class="good-about">
       <p class="good-description">
         {{ good.description }}
@@ -84,10 +84,16 @@ export default {
   gap: 10px;
 }
 
+.good-photo {
+  width: 350px;
+}
+
 .good-about {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   gap: 10px;
+  align-items: flex-start;
 }
 
 .good-price {
