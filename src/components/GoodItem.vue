@@ -91,6 +91,10 @@ export default {
   font-size: 20px;
 }
 
+.good-item__title:hover {
+  color: darkorange;
+}
+
 .good-item__price {
   color: navy;
   font-size: 20px;

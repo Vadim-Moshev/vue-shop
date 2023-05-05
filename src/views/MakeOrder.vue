@@ -167,4 +167,8 @@ export default {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.make-order__submit:hover {
+  background-color: darkorange;
+}
 </style>

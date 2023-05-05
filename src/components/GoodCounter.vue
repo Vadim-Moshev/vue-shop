@@ -76,6 +76,10 @@ export default {
   cursor: pointer;
 }
 
+.goods-counter__button:hover {
+  background-color: darkorange;
+}
+
 .goods-counter__indicator {
   display: flex;
   justify-content: center;
@@ -83,5 +87,6 @@ export default {
   color: navy;
   border: 1px solid navy;
   width: 40px;
+  cursor: default;
 }
 </style>

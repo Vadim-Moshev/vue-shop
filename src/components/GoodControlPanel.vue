@@ -68,4 +68,8 @@ export default {
   border-radius: 5px;
   width: 160px;
 }
+
+.good-control-panel__button:hover {
+  background-color: darkorange;
+}
 </style>
