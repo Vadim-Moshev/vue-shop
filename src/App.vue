@@ -93,9 +93,14 @@ body {
   flex-direction: column;
   min-height: 100%;
   margin: 0 auto;
+  padding-top: 55px;
 }
 
 .header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
