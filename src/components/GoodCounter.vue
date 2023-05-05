@@ -1,17 +1,17 @@
 <template>
   <div class="goods-counter">
     <input
-      @click="decrement"
       class="goods-counter__button"
       type="button"
       value="-"
+      @click="decrement"
     />
     <div class="goods-counter__indicator">{{ counterValue }}</div>
     <input
-      @click="increment"
       class="goods-counter__button"
       type="button"
       value="+"
+      @click="increment"
     />
   </div>
 </template>
