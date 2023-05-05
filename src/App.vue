@@ -136,6 +136,6 @@ body {
   padding: 15px;
   background-color: navy;
   color: #fff;
-  text-align: left;
+  text-align: right;
 }
 </style>
